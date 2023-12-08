@@ -1,0 +1,10 @@
+@import '../../../../stylesheet/base.scss';
+
+.text-area-container {
+    display: flex;
+    .label-text-container {
+        text-align: left;
+        display: flex;
+        padding-top: 9px;
+    }
+}

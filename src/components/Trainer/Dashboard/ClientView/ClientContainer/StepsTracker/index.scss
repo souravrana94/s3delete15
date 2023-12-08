@@ -1,0 +1,56 @@
+@import '../../../../../../stylesheet/base.scss';
+
+.steps-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    @include for-mobile-576 {
+        margin-top: 10px;
+    }
+
+    .progress {
+        background-color: inherit;
+        height: 100%;
+        width: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @include for-mobile-992-max {
+            width: 70px;
+        }
+        .children {
+            padding: 50px !important;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            font-size: 0.5rem;
+
+            h5 {
+                @include font($f-size-18, $white, $font-Montserrat-Medium);
+                margin-top: 12px;
+                margin-bottom: 0;
+
+                @include for-mobile-992-max {
+                    @include font($f-size-16, $white, $font-Montserrat-Medium);
+                }
+            }
+
+            p {
+                margin-top: 0;
+                @include font($f-size-11, $grey-3, $font-Montserrat-Medium);
+            }
+        }
+    }
+}
+
+.tooltip-container-steps {
+    padding: 20px 20px 8px 8px !important;
+    width: 25%;
+    min-width: 0 !important;
+
+    @include for-mobile-992-max {
+        width: 80%;
+    }
+}

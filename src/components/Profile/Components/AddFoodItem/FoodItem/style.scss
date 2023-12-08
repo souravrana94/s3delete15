@@ -1,0 +1,117 @@
+@import '../../../../../stylesheet/base.scss';
+
+.heading1 {
+    border-bottom: 3px solid;
+    width: max-content;
+    font-size: 30px;
+    font-weight: 600;
+    // margin-bottom: 30px;
+    // margin-left: 10px;
+}
+.searchIcon {
+    width: 25px;
+    height: 25px;
+    padding: 2px;
+}
+.cell-header {
+    padding: 5px 10px;
+    @include font($f-size-16, white, $font-Montserrat-Bold);
+}
+.cell-padding {
+    padding: 5px 10px;
+    @include font($f-size-14, white, $font-Montserrat-Regular);
+}
+.food-name {
+    max-width: 350px;
+    cursor: pointer;
+}
+.food-calories {
+    max-width: 100px;
+    text-align: center;
+}
+.food-protein {
+    max-width: 100px;
+    text-align: center;
+}
+.food-fat {
+    max-width: 100px;
+    text-align: center;
+}
+.food-carbs {
+    max-width: 100px;
+    text-align: center;
+}
+.serving_table {
+    padding: 0px 20px 10px;
+    .serving_size {
+        .food-serving-header {
+            padding: 5px 20px;
+            min-width: 200px;
+            @include font($f-size-14, white, $font-Montserrat-Bold);
+        }
+        .food-serving-unit {
+            padding: 5px 20px;
+            min-width: 200px;
+            @include font($f-size-12, white, $font-Montserrat-Regular);
+        }
+        .food-serving-multiplier {
+            padding: 5px 20px;
+            text-align: center;
+            min-width: 200px;
+            @include font($f-size-12, white, $font-Montserrat-Regular);
+        }
+    }
+}
+.serving_noData {
+    padding: 10px;
+    background-color: black;
+    border-radius: 5px;
+    @include font($f-size-12, white, $font-Montserrat-Regular);
+    font-style: italic;
+    text-align: center;
+}
+
+.pagination {
+    // display: inline-block;
+    display: flex;
+    justify-content: center;
+    padding: 20px 10px;
+}
+
+.inactivePage {
+    color: white;
+    // float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+.activePage {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+.addButton {
+    width: fit-content;
+    margin: 0;
+}
+.editIcon {
+    margin: 5px;
+}
+.crossIcon {
+    color: red;
+    margin: 5px;
+}
+.iconSize {
+    width: 20px;
+    height: 20px;
+}
+.displaymsgError {
+    padding-top: 10px;
+    @include font($f-size-14, $red, $font-Montserrat-Regular);
+}
+.displaymsgSuccess {
+    padding-top: 10px;
+    @include font($f-size-14, $green-1, $font-Montserrat-Regular);
+}

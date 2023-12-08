@@ -1,0 +1,161 @@
+@import '../../stylesheet/base.scss';
+
+.bodyLanding {
+    background-color: rgba(32, 33, 36, 1);
+    color: black;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.modal-content {
+    width: auto;
+    border-radius: 15px;
+    border-color: transparent;
+}
+
+.hero-container {
+    min-height: 100vh;
+    background-color: rgba(32, 33, 36, 1);
+    display: flex;
+    @include for-mobile-992-max {
+        flex-direction: column;
+    }
+    .info-section {
+        display: flex;
+        flex-direction: column;
+        color: white;
+        padding: 40px 0rem 0rem 60px;
+        gap: 5vh;
+        z-index: 5;
+        min-height: 500px;
+        @include for-mobile-992-max {
+            margin: 0 auto;
+        }
+        @include for-mobile-481-down {
+            min-height: unset;
+            gap: 3vh;
+        }
+        .logo {
+            display: flex;
+            align-self: flex-start;
+            align-items: center;
+            margin-bottom: 70px;
+            .logo-img {
+                height: 55px;
+                @include for-mobile-481-down {
+                    height: 40px;
+                }
+            }
+            .logo-heading {
+                @include font($f-size-32, $white, $font-Montserrat-Regular);
+                padding-left: 16px;
+                margin: 0;
+                align-self: center;
+                @include for-mobile-481-down {
+                    font-size: 24px;
+                }
+            }
+        }
+        .info-heading {
+            @include font($f-size-60, $white, $font-Montserrat-SemiBold);
+            text-transform: uppercase;
+            letter-spacing: 0.03em;
+            @include for-mobile-992-max {
+                font-size: 54px;
+            }
+            @include for-mobile-481-down {
+                font-size: 36px;
+            }
+        }
+        .info-text {
+            @include font($f-size-20, $white, $font-Montserrat-Regular);
+            letter-spacing: 0.02em;
+            line-height: 36px;
+            font-weight: 400;
+            max-width: 40vw;
+            @include for-mobile-992-max {
+                font-size: 18px;
+                max-width: unset;
+            }
+            @include for-mobile-481-down {
+                font-size: 14px;
+            }
+        }
+        .sign-btn {
+            width: 32%;
+            display: flex;
+            justify-content: center;
+
+            padding: 6px;
+            color: white;
+            border: 3px solid white;
+            @include for-mobile-481-down {
+                border-width: 2px;
+            }
+
+            .sign-btn-text {
+                @include font($f-size-24, $white, $font-Montserrat-Regular);
+                margin: 0;
+                @include for-mobile-481-down {
+                    font-size: 18px;
+                }
+            }
+        }
+        .sign-btn:hover {
+            cursor: pointer;
+            transform: scale(1.03);
+        }
+    }
+
+    .hero-area {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        padding-bottom: 10vh;
+        @include for-mobile-992-max {
+            justify-content: center;
+            margin-top: auto;
+            padding: 40px 0;
+            width: 100%;
+        }
+        @include for-mobile-475-down {
+            padding-bottom: 50px;
+        }
+        .hero-img {
+            margin-right: -16%;
+            max-width: 60vw;
+            object-fit: contain;
+            @include for-mobile-992-max {
+                margin-right: 0;
+                max-width: 60vw;
+            }
+            @include for-mobile-475-down {
+                max-width: 98vw;
+            }
+        }
+    }
+}
+.custom-nav {
+    display: flex;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    gap: 40px;
+    padding: 10px 21px;
+    background: rgba(32, 33, 36, 1);
+    border-radius: 10px 0px 0px 0px;
+    z-index: 5;
+    .nav-element {
+        font-size: 18.5px;
+        color: white;
+        margin: 0;
+    }
+    .nav-element:hover {
+        transform: translateY(-5px);
+    }
+}

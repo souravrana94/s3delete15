@@ -1,0 +1,7 @@
+@import '../../../../stylesheet/base.scss';
+
+.progressLabel {
+    @include font($f-size-10, $white, $font-Montserrat-Regular);
+    padding-right: 5px;
+    min-width: 45px;
+}

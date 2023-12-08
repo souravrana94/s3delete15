@@ -1,0 +1,42 @@
+@import '../../../../stylesheet/base.scss';
+.edit-todo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .date-container {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        // justify-content: space-between;
+        // align-self: flex-start !important;
+        .time {
+            display: flex;
+            margin-top: 3px;
+            > * {
+                padding-right: 4px;
+            }
+            > span {
+                @include font($f-size-16, $grey-1, $font-Montserrat-SemiBold);
+                min-width: 60px;
+            }
+        }
+        // .date-picker {
+        //     position: absolute;
+        // }
+    }
+    .add-category-btn {
+        align-self: center;
+        margin-bottom: 14px;
+        flex: unset;
+        width: max-content;
+        height: max-content;
+        padding-left: 10px;
+        padding-right: 10px;
+        color: $green-1;
+        background-color: $main-card-bg;
+    }
+    .add-button {
+        padding-bottom: 0 !important;
+        padding-top: 0 !important;
+    }
+}

@@ -1,0 +1,59 @@
+@import '../../../../stylesheet/base.scss';
+
+.label,
+.label-input-container .label-text-container {
+    min-width: 100px;
+    // width: fit-content;
+    @include for-mobile-481-down {
+        min-width: 125px !important;
+    }
+}
+.label-input-container {
+    @include for-mobile-767-down {
+        width: 100%;
+    }
+}
+.label-input-container {
+    .colors-container {
+        @include for-mobile-481-down {
+            justify-content: flex-start;
+        }
+    }
+    @include for-mobile-481-down {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .css-1itv6pj-container,
+    .css-70u7ot-container {
+        width: 100%;
+    }
+}
+.mybutton {
+    width: 100%;
+    padding: 10px 20px;
+}
+.mybutton1 {
+    color: #36f5c7;
+    background-color: transparent;
+    border: 2px solid #36f5c7;
+    padding: 9px 20px;
+}
+.note {
+    padding: 10px 10px 0 10px;
+    font-size: 12px;
+}
+.heading {
+    border-bottom: 3px solid;
+    width: max-content;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    margin-left: 10px;
+}
+.OtherUnitButton {
+    background-color: $green-1;
+    padding: 2px 5px;
+    border-radius: 5px;
+    @include font($f-size-10, black, $font-Montserrat-Medium);
+}

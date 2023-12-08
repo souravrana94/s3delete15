@@ -1,0 +1,36 @@
+@import '../../../../stylesheet/base.scss';
+
+.remainingHeader-todo {
+    display: flex !important;
+    flex-direction: row;
+    width: 100%;
+    .datePickerWrapper-remaining {
+        display: flex;
+        flex-direction: row;
+        width: 80%;
+        .time {
+            display: flex;
+            margin-top: 3px;
+            > * {
+                padding-right: 4px;
+            }
+            > span {
+                @include font($f-size-13, $grey-1, $font-Montserrat-Medium);
+                min-width: 60px;
+            }
+        }
+        .react-datepicker-wrapper {
+            cursor: pointer;
+            width: max-content;
+            display: flex;
+        }
+    }
+    .icons-container {
+        width: 20%;
+        display: flex;
+        flex-direction: row-reverse;
+        .edit-icon {
+            margin-right: 10px;
+        }
+    }
+}

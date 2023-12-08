@@ -1,0 +1,182 @@
+@import '../../stylesheet/base.scss';
+
+.bodyLanding {
+    background-color: #f4f4f4;
+    color: black;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    overflow-y: auto;
+    left: 0;
+    top: 0;
+    overflow-x: hidden;
+}
+
+.modal-content {
+    width: auto;
+    border-radius: 15px;
+    border-color: transparent;
+}
+
+.landingContainer {
+    @include for-mobile-567 {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+    .topContainer {
+        .leftContainer {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            .logoContainer {
+                display: flex;
+                align-items: center;
+                justify-content: left;
+                padding-top: 25px;
+                // padding-left: 10px;
+                height: 10vh;
+                @include for-mobile-375-up {
+                    padding-left: 30px;
+                }
+                .companyText {
+                    color: black;
+                    margin-bottom: 0;
+                }
+            }
+            > * {
+                display: flex;
+                justify-content: left;
+                padding: 0 20px;
+                width: 100%;
+                @include for-mobile-375-up {
+                    padding: 0 40px;
+                }
+            }
+            .bigHeadingText {
+                @include font($f-size-28, $black, $font-Montserrat-SemiBold);
+                line-height: 40px;
+                padding-top: 20px;
+                @include for-tablet-min {
+                    @include font(
+                        $f-size-44,
+                        $black,
+                        $font-Montserrat-SemiBold
+                    );
+                    padding-right: 0px;
+                    @include for-tablet-up-mid {
+                        @include font(
+                            $f-size-60,
+                            $black,
+                            $font-Montserrat-SemiBold
+                        );
+                    }
+                    line-height: 70px;
+                    padding-top: 40px;
+                }
+
+                letter-spacing: 2px;
+            }
+            .color-green {
+                margin-left: 20px;
+                color: $green-4;
+            }
+            .descriptionText {
+                @include font($f-size-12, $black, $font-Montserrat-Regular);
+                @include for-tablet-min {
+                    @include font($f-size-18, $black, $font-Montserrat-Regular);
+                }
+                padding-right: 50px;
+            }
+            .appText {
+                font-weight: 700;
+            }
+            .registerContainer {
+                > * {
+                    display: flex;
+                    align-items: center;
+                    padding-top: 5px;
+                    padding-bottom: 10px;
+                    @include for-tablet-min {
+                        padding-top: 25px;
+                    }
+                }
+                .registerText {
+                    @include font($f-size-24, $black, $font-Montserrat-Regular);
+                    font-weight: 600 !important;
+                    margin-bottom: 0;
+                    padding-right: 15px;
+                }
+            }
+        }
+    }
+    .buttonContainer {
+        padding-top: 20px;
+        > * {
+            background-color: $frame-1;
+            color: white;
+            font-weight: 500;
+            min-width: 120px;
+            max-width: 150px;
+            box-shadow: 4px 4px 20px rgb(0 0 0 / 35%);
+            margin-left: 0;
+            margin-right: 0;
+        }
+
+        .btnUser {
+            margin-right: 20px;
+        }
+        .btnTrainer {
+            margin-left: 20px;
+        }
+    }
+
+    .appImageContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .appImage {
+            object-fit: contain;
+            width: 100%;
+            height: 100%;
+            max-height: 100vh;
+            @include for-mobile-767-down {
+                margin-top: 30px;
+                width: 80%;
+            }
+        }
+    }
+
+    .socialIconContainer {
+        display: flex;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .remove-a-decoration:hover {
+        color: #7c7c7c;
+    }
+
+    .social-icon-horizontal,
+    .social-icon-vertical {
+        max-width: 40px;
+        max-height: 40px;
+        margin-top: 15px;
+        cursor: pointer;
+        display: block;
+        margin-left: 10px;
+        margin-right: 10px;
+        transition: transform 0.3s ease;
+    }
+
+    .social-icon-horizontal {
+        transform: translateY(0px);
+        width: 20px;
+    }
+
+    .social-icon-horizontal:hover:not([disabled]) {
+        transform: translateY(-10px);
+    }
+}

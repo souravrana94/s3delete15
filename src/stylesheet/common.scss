@@ -1,0 +1,150 @@
+@import 'variable';
+@import 'mixins';
+
+* {
+    @include customScroll;
+}
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+}
+@include for-mobile-767-down {
+    .flex-on-medium {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@include for-mobile-576 {
+    .flex-on-small {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .reverse-full-width-on-small {
+        display: flex;
+        flex-wrap: wrap-reverse;
+        > * {
+            width: 100%;
+        }
+    }
+
+    .reverse-on-small {
+        display: flex;
+        flex-wrap: wrap-reverse;
+        > * {
+            width: 100%;
+        }
+    }
+}
+
+.message {
+    margin-left: 10px;
+    font-weight: 500;
+}
+.message.error {
+    color: #dc3545;
+}
+.message.success {
+    color: rgba(56, 204, 158, 1);
+}
+
+.close-button-icon {
+    width: 18px;
+    height: 18px;
+    align-self: center;
+    cursor: pointer;
+
+    @include for-mobile-576 {
+        height: 16px;
+        width: 16px;
+    }
+}
+
+.close-button-icon.small {
+    width: 13px;
+    height: 13px;
+}
+
+.hideTab {
+    display: block;
+    @include for-tablet-min {
+        display: none;
+    }
+}
+.showTab {
+    display: none;
+    @include for-tablet-min {
+        display: block;
+    }
+}
+.showMobileTab {
+    display: block;
+    @include for-mobile-768-to-1023 {
+        display: none;
+    }
+    @include for-mobile-max {
+        display: none;
+    }
+}
+.hideMobileTab {
+    display: none !important;
+    @include for-mobile-768-to-1023 {
+        display: block !important;
+    }
+    @include for-mobile-max {
+        display: block !important;
+    }
+}
+
+// TODO make this custom
+.button {
+    @include font($f-size-16, $white, $font-Montserrat-SemiBold);
+    background-color: $f-color-blue;
+    border-radius: 4px;
+    margin: 16px 0;
+    padding: 16px 0;
+    width: 100%;
+}
+
+.show-more {
+    height: auto;
+}
+
+.justify-content-space-around {
+    justify-content: space-around;
+}
+
+// Change height as needed
+.show-less {
+    height: 270px;
+    overflow-y: hidden;
+    overflow-x: auto;
+}
+
+// Text-Colours
+.text-green {
+    color: $green-1;
+}
+
+.text-dark-green {
+    color: #38cc9e;
+}
+
+.card-bg {
+    background: $card-bg;
+}
+
+// Colours
+.bg-black {
+    background-color: $f-bg-black;
+}
+.bg-gray {
+    background-color: $grey-2;
+}
+
+// Min-Heights
+.mh-100vh {
+    min-height: $h-100;
+}

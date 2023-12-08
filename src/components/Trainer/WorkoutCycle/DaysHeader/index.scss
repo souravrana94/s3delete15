@@ -1,0 +1,115 @@
+@import '../../../../stylesheet/base.scss';
+
+.days-header {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    @include for-mobile-567 {
+        flex-direction: column;
+    }
+    .routine-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        .routine-summary {
+            position: relative;
+            display: flex;
+            background-color: $grey-8;
+            padding: 10px;
+            border-radius: 10px;
+            margin: 5px;
+            height: 63px;
+            font-weight: bold;
+            cursor: pointer;
+            @include for-mobile-567 {
+                flex-direction: column;
+                height: 85px;
+                width: 130px;
+                align-items: center;
+            }
+            &.selected {
+                background-color: $green-1;
+                color: black;
+                .day-number {
+                    color: black;
+                }
+            }
+
+            .day-number {
+                @include font($f-size-44, white, $font-Montserrat-Bold);
+                line-height: 40px;
+                width: 40px;
+                text-align: center;
+                @include for-mobile-567 {
+                    @include font($f-size-36, white, $font-Montserrat-SemiBold);
+                    // margin-right: 10px;
+                }
+            }
+
+            .routine-name {
+                width: 120px;
+                display: flex;
+                margin: auto;
+                padding-right: 5px;
+                padding-left: 5px;
+                @include for-mobile-567 {
+                    // display: none;
+                    width: auto;
+                    padding: 0px;
+                }
+            }
+
+            .close-button-icon {
+                display: none;
+                position: absolute;
+                top: 10px;
+                right: 10px;
+            }
+
+            .clone-day-icon {
+                display: none;
+                position: absolute;
+                right: 10px;
+                bottom: 7px;
+            }
+
+            &:hover {
+                .close-button-icon {
+                    display: block !important;
+
+                    &.selected {
+                        color: black;
+                    }
+                }
+
+                .clone-day-icon {
+                    display: block !important;
+
+                    &.selected {
+                        color: black;
+                    }
+                }
+            }
+        }
+    }
+
+    .add-edit-container {
+        min-width: 150px;
+        max-width: 150px;
+        margin-top: 5px;
+
+        .add-workout-btn {
+            @include font($f-size-14, $green-1, $font-Montserrat-Medium);
+            background-color: $grey-8;
+            margin: 3px;
+            line-height: $f-size-14;
+            height: 30px;
+        }
+    }
+}
+
+.reorder-btn {
+    margin: 5px;
+    margin-top: 10px;
+    min-width: 180px;
+}

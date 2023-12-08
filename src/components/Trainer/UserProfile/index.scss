@@ -1,0 +1,40 @@
+@import '../../../stylesheet/base.scss';
+.leftCard {
+    width: 25%;
+    margin: 10px;
+    @include for-mobile-567 {
+        width: 100%;
+    }
+}
+.rightCard {
+    width: 70%;
+    margin: 10px;
+    @include for-mobile-567 {
+        width: 100%;
+    }
+}
+.card1 {
+    background-color: $grey-7;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    @include font($f-size-13, white, $font-Montserrat-Regular);
+}
+.card2 {
+    background-color: $grey-7;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 5px;
+    @include font($f-size-13, white, $font-Montserrat-Regular);
+}
+.card2Heading {
+    @include font($f-size-16, white, $font-Montserrat-Bold);
+    padding-top: 10px;
+    padding-left: 10px;
+    margin-bottom: -5px;
+}
+.card2Subheading {
+    @include font($f-size-14, white, $font-Montserrat-SemiBold);
+}

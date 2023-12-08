@@ -1,0 +1,39 @@
+@import '../../../stylesheet/base.scss';
+
+.accordion-container {
+    cursor: pointer;
+    .shadow-div {
+        background-color: $main-card-bg;
+        box-shadow: 0 0 20px 3px #0000001a;
+    }
+    .card-container {
+        padding: 20px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+
+        .accordion-header {
+            display: grid;
+            // justify-content: space-between;
+            grid-template-columns: 0.99fr 0.01fr;
+            align-items: center;
+            width: 100%;
+            .accordion-title {
+                margin-bottom: 0;
+                .client-card-header {
+                    padding: 0px;
+                }
+            }
+
+            .down-carret {
+                font-size: 20px;
+                cursor: pointer;
+            }
+        }
+
+        .accordion-body {
+            margin-top: 20px;
+            padding: 10px;
+            white-space: pre-wrap;
+        }
+    }
+}

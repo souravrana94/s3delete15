@@ -1,0 +1,11 @@
+@import '../../../stylesheet/base.scss';
+
+.trackers {
+    display: flex;
+    align-items: center;
+    @include font($f-size-28, white, $font-Montserrat-SemiBold);
+    padding-top: 20px;
+    @include for-mobile-767-down {
+        flex-direction: column;
+    }
+}

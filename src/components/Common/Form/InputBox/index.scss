@@ -1,0 +1,59 @@
+@import '../../../../stylesheet/base.scss';
+@import '../index.scss';
+
+.label-input-container {
+    display: flex;
+
+    .label-text-container {
+        text-align: left;
+        display: flex;
+        min-width: 120px;
+        padding-top: 0;
+
+        .label {
+            color: white;
+            height: max-content;
+            width: max-content;
+            margin-top: auto;
+            margin-bottom: auto;
+
+            @include for-mobile-576 {
+                min-width: 100px;
+                max-width: 100px;
+            }
+        }
+    }
+
+    .input-container {
+        display: flex;
+        width: 100%;
+
+        .input-label {
+            padding: 0;
+            padding-right: 5px;
+            height: max-content;
+            margin: auto;
+        }
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .input-container {
+        width: 80%;
+    }
+}
+
+#none {
+    display: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type='number'] {
+    -moz-appearance: textfield;
+}

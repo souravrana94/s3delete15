@@ -1,0 +1,67 @@
+@import '../../../../../stylesheet/base.scss';
+.routine-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-left: 7px;
+    margin-top: 10px;
+    .routine-name {
+        @include font($f-size-20, $green-1, $font-Montserrat-SemiBold);
+        line-height: $f-size-20;
+    }
+    .routine-name-editing {
+        width: 63%;
+        @include font($f-size-20, $green-1, $font-Montserrat-SemiBold);
+        line-height: $f-size-20;
+        background-color: transparent;
+        border: 1px solid #444444;
+        padding: 5px;
+        border-radius: 5px;
+    }
+    .datePickerWrapper-remaining {
+        padding-top: 4px;
+        align-items: center;
+        display: flex;
+        @include font($f-size-13, $grey-4, $font-Montserrat-Medium);
+        > * {
+            padding-right: 4px;
+        }
+
+        .react-datepicker-wrapper {
+            cursor: pointer;
+            width: max-content;
+            display: flex;
+        }
+    }
+}
+.remaining-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    align-items: flex-start;
+    .time {
+        display: flex;
+        margin-top: 3px;
+        > * {
+            padding-right: 4px;
+        }
+        > span {
+            @include font($f-size-13, $grey-1, $font-Montserrat-Medium);
+            min-width: 60px;
+        }
+    }
+
+    .edit-close {
+        display: flex;
+        margin-top: 10px;
+        > .edit-icon {
+            margin-right: 10px;
+            filter: brightness(0) saturate(100%) invert(100%) sepia(0%)
+                saturate(0%) hue-rotate(65deg) brightness(104%) contrast(102%);
+        }
+        > * {
+            cursor: pointer;
+        }
+    }
+}

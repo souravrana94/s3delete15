@@ -1,0 +1,47 @@
+/** @format */
+
+.store-side-bar {
+    width: 200px;
+    padding: 10px;
+}
+
+ul.filter-side {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul.filter-side > li {
+    padding: 5px;
+    font-weight: 400;
+}
+
+ul.filter-side > li.active {
+    font-weight: bold;
+}
+
+.store-header-icon {
+    height: 22px;
+}
+
+.store-header-icon-large {
+    height: 25px;
+    transform: translateY(4px);
+}
+
+.light-add-address {
+    background-color: #eeeeee;
+}
+
+.light-add-address:hover {
+    background-color: #dfdddd;
+}
+
+.dark-add-address {
+    color: white;
+    background-color: #0c0c0c;
+}
+
+.dark-add-address:hover {
+    color: white;
+    background-color: #202020;
+}

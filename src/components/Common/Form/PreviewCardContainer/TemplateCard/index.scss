@@ -1,0 +1,59 @@
+.template-card-container {
+    width: 240px;
+    height: 130px;
+    border-radius: 15px;
+    color: black;
+    padding-left: 5px;
+    align-items: flex-end;
+    display: flex;
+    -moz-box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.15) !important;
+    -webkit-box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.15) !important;
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.15) !important;
+    .left {
+        width: 50%;
+        .trainer-image {
+            height: 180px;
+            object-fit: cover;
+            display: block;
+            width: 100%;
+            position: relative;
+        }
+        .text {
+            color: white;
+            font-size: 16px;
+            padding: 16px 32px;
+        }
+    }
+    .right {
+        width: 60%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        justify-content: space-around;
+        .name {
+            margin: 0%;
+            font-weight: 700;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+        .people-trained-text {
+            margin: 0%;
+            font-weight: 700;
+            font-size: 22px;
+        }
+        .tagline {
+            margin: 0%;
+            font-size: 9px;
+            font-weight: bold;
+            margin-top: 5px;
+            margin-bottom: 10px;
+        }
+        .people-trained {
+            @extend .tagline;
+            margin-top: 0px;
+        }
+    }
+}

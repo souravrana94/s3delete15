@@ -1,0 +1,36 @@
+.empty-cart-container {
+    width: 400px;
+    max-width: 90%;
+    display: grid;
+    margin: auto;
+    padding-top: 40px;
+
+    > * {
+        margin: auto;
+    }
+
+    .empty-cart-icon {
+        height: 300px;
+        width: 300px;
+    }
+
+    .text {
+        font-weight: 600;
+        font-size: 24px;
+        margin-bottom: 30px;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .small-text {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .browse-button {
+        max-width: 200px;
+        font-size: 16px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}

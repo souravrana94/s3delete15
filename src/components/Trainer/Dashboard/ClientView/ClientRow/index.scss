@@ -1,0 +1,336 @@
+@import '../../../../../stylesheet/base.scss';
+
+@mixin no-margin {
+    margin: 0;
+}
+.client-details-row {
+    margin-bottom: 10px;
+    .accordion-container {
+        cursor: default;
+    }
+    .accordion .card-container {
+        box-shadow: none;
+        padding: 0px;
+        padding: 0px;
+        background: none;
+        .accordion-header {
+            background-color: #1f2731;
+            border-radius: 10px;
+            .down-carret {
+                // padding-right: 21px;
+                @include for-mobile-567 {
+                    display: none;
+                }
+            }
+            @include for-mobile-567 {
+                grid-template-columns: 1fr;
+            }
+        }
+        .toggle {
+            border-radius: 0px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        .accordion-body {
+            margin: 0;
+            box-shadow: none;
+            background-color: #1f2731;
+            border-radius: 0px;
+            padding: 0px !important;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+    }
+    .last-session {
+        @include font($f-size-13, $grey-3, $font-Montserrat-Medium);
+        margin-bottom: 0;
+
+        @include for-mobile-992-max {
+            @include font($f-size-10, $grey-3, $font-Montserrat-Medium);
+        }
+    }
+    .client-card {
+        background-color: $main-background;
+        border-radius: 10px;
+        border: none;
+        display: flex;
+        //flex-wrap: wrap;
+        //flex-wrap: wrap;
+        .frequency {
+            @include font($f-size-13, $grey-3, $font-Montserrat-Medium);
+        }
+        .client-card-header {
+            background-color: transparent;
+            border: 0;
+            padding: 4px 16px;
+            .client-heading {
+                display: flex;
+                justify-content: space-between;
+                padding-left: 7%;
+                flex-wrap: wrap;
+                > * {
+                    margin-bottom: 5px;
+                    margin-top: 5px;
+                }
+                @include for-mobile-567 {
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
+                }
+                .back-container {
+                    align-items: center;
+                    display: flex;
+                    margin-right: 15px;
+                }
+                .date-alerts-container {
+                    display: flex;
+                    flex: 1;
+                    flex-direction: row;
+                    align-self: stretch;
+                    align-items: stretch;
+                    justify-content: flex-end;
+
+                    @include for-mobile-992-max {
+                        margin: 10px 0;
+                    }
+
+                    .date-alerts-left {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        padding: 5px;
+
+                        .date-alert {
+                            background-color: $red;
+                            cursor: pointer;
+                        }
+                        .date-success {
+                            background-color: $green;
+                            cursor: pointer;
+                        }
+                        .date {
+                            white-space: nowrap;
+                            display: flex;
+                            align-items: center;
+                            justify-content: flex-start;
+                            padding: 6px 10px;
+                            border-radius: 10px;
+                            margin: 5px 0;
+                            @include for-mobile-992-max {
+                                padding: 5px;
+                                margin: 3px 0;
+                            }
+
+                            .date-text {
+                                display: flex;
+                                margin-left: 10px;
+                                justify-content: left;
+                                align-items: flex-start;
+                                width: 50px;
+                                @include for-mobile-992-max {
+                                    width: 45px;
+                                }
+
+                                &:has(> .no-date) {
+                                    justify-content: center;
+                                    padding-right: 10px;
+
+                                    @include for-mobile-992-max {
+                                        padding-right: 18px;
+                                    }
+                                }
+
+                                h5 {
+                                    @include no-margin;
+                                    @include font(
+                                        $f-size-16,
+                                        $white,
+                                        $font-Montserrat-Medium
+                                    );
+                                    @include for-mobile-992-max {
+                                        @include font(
+                                            $f-size-13,
+                                            $white,
+                                            $font-Montserrat-Medium
+                                        );
+                                    }
+                                }
+                            }
+                            .date-alert-icon {
+                                // margin-right: 10px;
+                                display: flex;
+                                font-size: 24px;
+
+                                @include for-mobile-992-max {
+                                    font-size: 20px !important;
+                                }
+                            }
+
+                            .check {
+                                position: relative;
+                                left: -3.5px;
+
+                                @include for-mobile-992-max {
+                                    left: -2px;
+                                }
+                            }
+                        }
+                    }
+
+                    .next-button {
+                        margin: 5px 8px;
+                        padding: 0 5px;
+                        align-self: stretch;
+                        background: #101317;
+                        border-radius: 10px;
+                        align-items: center !important;
+                        outline: none;
+                        color: white;
+                        flex: 0.25;
+                        font-size: 25px;
+                        max-width: 40px;
+                        @include for-tablet-1024-down {
+                            align-self: stretch;
+                            flex: 0.2;
+                        }
+                        span {
+                            margin-right: 0 !important;
+                        }
+                    }
+                }
+                .client-details {
+                    display: flex;
+                    flex: 1;
+                    align-items: center;
+                    .client-name-details {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        .image-container {
+                            min-width: 45px;
+                            position: relative;
+                            .close-button-container {
+                                display: none;
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                height: 40px;
+                                width: 40px;
+                                border-radius: 20px;
+                                background-color: $transparent-black;
+                            }
+                            .close-button-icon-conainer {
+                                display: flex;
+                                justify-content: center;
+                                height: 100%;
+                                align-items: center;
+                            }
+                            &:hover {
+                                .close-button-container {
+                                    display: block !important;
+                                }
+                            }
+                        }
+                        .client-name {
+                            @include font(
+                                $f-size-20,
+                                $white,
+                                $font-Montserrat-Medium
+                            );
+                            line-height: $f-size-21;
+                            margin-bottom: 0;
+
+                            @include for-mobile-992-max {
+                                @include font(
+                                    $f-size-16,
+                                    $white,
+                                    $font-Montserrat-Medium
+                                );
+                            }
+                        }
+                    }
+                }
+                .target-steps {
+                    @include for-mobile-567 {
+                        // margin-top: 10px;
+                    }
+                }
+                // .scheduled-session {
+                //     .scheduled-session-text {
+                //         @include font(
+                //             $f-size-14,
+                //             $grey-3,
+                //             $font-Montserrat-Medium
+                //         );
+                //         margin-bottom: 0;
+                //         text-align: center;
+                //     }
+                //     display: flex;
+                //     align-items: center;
+                // }
+                .last-updated-workout-time {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    .last-updated-workout-time-text {
+                        @include font(
+                            $f-size-11,
+                            $grey-3,
+                            $font-Montserrat-Medium
+                        );
+                        margin-bottom: 0;
+                        text-align: center;
+                    }
+                }
+                .button-container {
+                    display: flex;
+
+                    .no-word-wrap {
+                        white-space: nowrap;
+                        min-width: 120px;
+                    }
+                    @include for-mobile-567 {
+                        // margin-top: 10px;
+                    }
+                }
+
+                .performance {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: flex-end;
+                    align-items: center;
+                    @include for-mobile-992-max {
+                        width: fit-content;
+                    }
+                    @include for-mobile-567 {
+                        display: none;
+                    }
+                    .btn-primary {
+                        background-color: rgba(0, 0, 0, 0);
+                        border-color: rgba(0, 0, 0, 0);
+                        border: 0;
+                    }
+                    .performance-text {
+                        @include for-mobile-992-max {
+                            display: none;
+                        }
+                    }
+                    .btn-primary:focus,
+                    .btn-primary::selection,
+                    .btn-primary:active,
+                    .button:focus,
+                    .button:active {
+                        outline: unset;
+                        border: unset;
+                    }
+                    .down-carret {
+                        padding-left: 10px;
+                    }
+                }
+            }
+        }
+    }
+}

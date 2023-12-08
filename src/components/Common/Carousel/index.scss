@@ -1,0 +1,11 @@
+@import '../../../stylesheet/base.scss';
+
+.my-slider {
+    overflow-x: inherit;
+    background-color: transparent;
+    .slick-list {
+        overflow: visible;
+        overflow-x: visible;
+        overflow-x: clip;
+    }
+}

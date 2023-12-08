@@ -1,0 +1,22 @@
+@import '../../../../stylesheet/base.scss';
+
+.selectedButton {
+    background-color: $grey-8;
+    -moz-box-shadow: 0 0 15px 0px rgba(0, 0, 0, 0.4) !important;
+    -webkit-box-shadow: 0 0 15px 0px rgba(0, 0, 0, 0.4) !important;
+    box-shadow: 0 0 15px 0px rgba(0, 0, 0, 0.4) !important;
+    @include font($f-size-28, white, $font-Montserrat-SemiBold);
+    padding: 10px;
+    margin: 10px;
+    background-color: black;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.buttons {
+    cursor: pointer;
+    @include font($f-size-28, white, $font-Montserrat-SemiBold);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    // background-color: rgb(70, 90, 79);
+}

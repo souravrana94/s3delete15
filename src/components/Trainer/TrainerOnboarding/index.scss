@@ -1,0 +1,36 @@
+@import '../../../stylesheet/base.scss';
+.trainer-onboarding-container {
+    .search-box {
+        color: white;
+        width: 100%;
+    }
+
+    .label-text-container {
+        &.age {
+            width: 60px;
+            min-width: min-content;
+
+            @include for-mobile-992-max {
+                width: 150px;
+                min-width: 150px;
+            }
+
+            @include for-mobile-576 {
+                width: 100px;
+                min-width: 100px;
+            }
+        }
+
+        &.experience,
+        &.description,
+        &.phone {
+            min-width: 150px;
+            max-width: 150px;
+
+            @include for-mobile-576 {
+                width: 100px;
+                min-width: 100px;
+            }
+        }
+    }
+}

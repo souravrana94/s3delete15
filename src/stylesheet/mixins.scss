@@ -1,0 +1,461 @@
+@mixin font($size, $color, $family) {
+    color: $color;
+    font-size: $size;
+    font-family: $family;
+}
+
+@mixin btn-disable() {
+    cursor: default;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    pointer-events: none;
+    opacity: 0.7;
+}
+@mixin color-hover-focus {
+    background: $f-color-light-gray;
+    color: $f-color-white;
+    &:hover,
+    &:focus {
+        background: $f-color-light-gray;
+        color: $f-color-white;
+    }
+}
+@mixin card {
+    background-color: $white;
+    border-radius: 4px;
+    border: 1px solid $gray-light2;
+}
+@mixin text-overflow($width) {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: $width;
+}
+@mixin box-wrapper() {
+    border: 1px solid $border;
+    border-radius: 4px;
+    @include for-mobile-max {
+        border-color: $border;
+        border-radius: 0;
+        border-style: solid;
+        border-width: 0 0 1px;
+    }
+}
+//  dropdown
+@mixin dropdown-toggle($padding) {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: $white url(/images/botm-arrow-black.svg) 100% center no-repeat;
+    border-radius: 4px;
+    border: 1px solid $white;
+    box-shadow: none;
+    cursor: pointer;
+    display: inline-block;
+    outline: none;
+    opacity: 0.7;
+    padding: $padding;
+    width: auto;
+}
+@mixin dropdown-toggler($padding, $background) {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: $background url(/images/botm-arrow-black.svg) 100% center
+        no-repeat;
+    border-radius: 0;
+    border: 1px solid $background;
+    box-shadow: none;
+    cursor: pointer;
+    display: inline-block;
+    outline: none;
+    opacity: 0.7;
+    padding: $padding;
+    width: auto;
+}
+@mixin tab-shadow($border) {
+    border-radius: 20px;
+    border: 1px solid $tb-dash-brd;
+    box-shadow: 6px 7px 9px $light-grey;
+    @include for-mobile-992-max {
+        border-radius: 4px;
+        box-shadow: 1px 1px 5px $light-grey;
+    }
+}
+@mixin tabs-radius() {
+    border-radius: 15px;
+    @include for-mobile-max {
+        border-radius: 4px;
+    }
+}
+@mixin tab-radius($desktop, $mobile) {
+    border-radius: $desktop;
+    @include for-mobile-max {
+        border-radius: $mobile;
+    }
+}
+@mixin circle($height, $width, $radius) {
+    height: $height;
+    width: $width;
+    border-radius: $radius;
+}
+/*Media Query*/
+@mixin for-mobile-mid-min {
+    @media only screen and (min-width: $mg-mobile-mid) {
+        @content;
+    } /*min-width:568px*/
+}
+
+@mixin for-tablet-min {
+    @media only screen and (min-width: $mg-tablet-min) {
+        @content;
+    } /*min-width:768px*/
+}
+
+@mixin for-tablet-up-mid {
+    @media only screen and (min-width: $mg-tablet-mid) {
+        @content;
+    } /*min-width:992px*/
+}
+
+@mixin for-tablet-up-min {
+    @media only screen and (min-width: $mg-tablet-max) {
+        @content;
+    } /*min-width:1024px*/
+}
+
+@mixin for-desktop-up-min {
+    @media only screen and (min-width: $mg-desktop-mid) {
+        @content;
+    } /*min-width:1200px*/
+}
+
+@mixin for-desktop-max-in {
+    @media only screen and (max-width: $mg-desktop-max-up) {
+        @content;
+    } /*max-width:1400px*/
+}
+
+@mixin for-desktop-max-up {
+    @media only screen and (min-width: $mg-desktop-max-up) {
+        @content;
+    } /*min-width:1400px*/
+}
+
+@mixin for-mobile-810-up {
+    @media only screen and (min-width: $mg-tablet-810) {
+        @content;
+    } /*min-width: 810px */
+}
+@mixin for-mobile-600 {
+    @media only screen and (min-width: $mg-mobile-600) {
+        @content;
+    } /*min-width: 600px */
+}
+@mixin for-mobile-415 {
+    @media only screen and (min-width: $mg-mobile-415) {
+        @content;
+    } /*min-width:415px*/
+}
+
+@mixin for-mobile-414-up {
+    @media only screen and (min-width: $mg-mobile-414) {
+        @content;
+    } /*min-width:414px*/
+}
+@mixin for-mobile-414-down {
+    @media only screen and (max-width: $mg-mobile-414) {
+        @content;
+    } /*min-width:414px*/
+}
+@mixin for-mobile-375-up {
+    @media only screen and (min-width: $mg-mobile-375) {
+        @content;
+    } /*min-width:375px*/
+}
+
+@mixin for-mobile-1199-down {
+    @media only screen and (max-width: $mg-desktop-1199) {
+        @content;
+    } /*max-width: 1199 */
+}
+
+@mixin for-mobile-375-down {
+    @media only screen and (max-width: $mg-mobile-375) {
+        @content;
+    } /*max-width:375px*/
+}
+@mixin for-mobile-767-down {
+    @media only screen and (max-width: $mg-mobile-767) {
+        @content;
+    } /*max-width: 767 */
+}
+@mixin for-big-Desk-1920 {
+    @media only screen and (min-width: $mg-Bigdesktop-max-up) {
+        @content;
+    } /*max-width:1920px*/
+}
+@mixin for-tablet-1024-down {
+    @media only screen and (max-width: $mg-tablet-max) {
+        @content;
+    } /*max-width:1024px*/
+}
+@mixin for-tablet-1023 {
+    @media only screen and (max-width: $mg-tablet-1023) {
+        @content;
+    } /*max-width:1023px*/
+}
+@mixin for-mobile-321-down {
+    @media only screen and (max-width: $mg-mobile-321) {
+        @content;
+    } /*max-width:321px*/
+}
+@mixin for-mobile-374-down {
+    @media only screen and (max-width: $mg-mobile-374) {
+        @content;
+    } /*max-width:374px*/
+}
+
+@mixin for-mobile-475-down {
+    @media only screen and (max-width: $mg-mobile-475) {
+        @content;
+    } /*max-width:374px*/
+}
+
+@mixin for-mobile-415-down {
+    @media only screen and (max-width: $mg-mobile-415) {
+        @content;
+    } /*max-width:414px*/
+}
+@mixin for-mobile-max {
+    @media only screen and (max-width: $mg-mobile-max) {
+        @content;
+    } /*max-width: 767px*/
+}
+
+@mixin for-mobile-992-max {
+    @media only screen and (max-width: $mg-tablet-mid) {
+        @content;
+    } /*max-width: 992px*/
+}
+
+@mixin for-desktop-up {
+    @media only screen and (max-width: $mg-desktop-mid) {
+        @content;
+    } /*max-width:1200px*/
+}
+@mixin for-mobile-576 {
+    @media only screen and (max-width: $mg-mobile-576) {
+        @content;
+    } /*max-width: 576px */
+}
+
+@mixin for-mobile-567 {
+    @media only screen and (max-width: $mg-mobile-567) {
+        @content;
+    } /*max-width: 567px */
+}
+
+@mixin for-mobile-600-down {
+    @media only screen and (max-width: $mg-mobile-600) {
+        @content;
+    } /*max-width: 600px */
+}
+
+@mixin for-mobile-768-down {
+    @media only screen and (max-width: $mg-mobile-768) {
+        @content;
+    } /*max-width: 768px */
+}
+
+@mixin for-mobile-481-down {
+    @media only screen and (max-width: $mg-mobile-481) {
+        @content;
+    } /*max-width:481px*/
+}
+
+@mixin for-mobile-768-to-1199 {
+    @media only screen and (min-width: $mg-tablet-min) and (max-width: $mg-desktop-1199) {
+        @content;
+    }
+}
+
+@mixin for-mobile-1024-to-1199 {
+    @media only screen and (min-width: $mg-tablet-max) and (max-width: $mg-desktop-1199) {
+        @content;
+    }
+}
+@mixin for-mobile-769-to-1199 {
+    @media only screen and (min-width: $mg-tablet-769) and (max-width: $mg-desktop-1199) {
+        @content;
+    }
+}
+@mixin for-mobile-768-to-1200 {
+    @media only screen and (min-width: $mg-tablet-min) and (max-width: $mg-desktop-mid) {
+        @content;
+    }
+}
+@mixin for-desktop-1200-to-1380 {
+    @media only screen and (min-width: $mg-desktop-mid) and (max-width: $mg-desktop-1380) {
+        @content;
+    }
+}
+@mixin for-desktop-1025-to-1225 {
+    @media only screen and (min-width: $mg-desktop-min) and (max-width: $mg-desktop-1225) {
+        @content;
+    }
+}
+@mixin for-desktop-768-to-1225 {
+    @media only screen and (min-width: $mg-tablet-min) and (max-width: $mg-desktop-1225) {
+        @content;
+    }
+}
+@mixin for-desktop-769-to-1225 {
+    @media only screen and (min-width: $mg-tablet-769) and (max-width: $mg-desktop-1225) {
+        @content;
+    }
+}
+
+@mixin for-big-Desk-1921-t0-3000 {
+    @media only screen and (min-width: $mg-desktop-min) and (max-width: $mg-Bigdesktop-max) {
+        @content;
+    } /*min-width:1921px*/
+}
+
+@mixin for-desktop-1400-to-1920 {
+    @media only screen and (min-width: $mg-desktop-max-up) and (max-width: $mg-desktop-1920) {
+        @content;
+    }
+}
+
+@mixin for-mobile-768-to-1180 {
+    @media only screen and (min-width: $mg-tablet-min) and (max-width: $mg-desktop-1180) {
+        @content;
+    }
+}
+@mixin for-mobile-768-to-1024 {
+    @media only screen and (min-width: $mg-tablet-min) and (max-width: $mg-tablet-max) {
+        @content;
+    }
+}
+@mixin for-mobile-768-to-1023 {
+    @media only screen and (min-width: $mg-tablet-min) and (max-width: $mg-tablet-1023) {
+        @content;
+    }
+}
+@mixin for-mobile-568-to-767 {
+    @media only screen and (min-width: $mg-mobile-mid) and (max-width: $mg-mobile-max) {
+        @content;
+    }
+}
+@mixin for-mobile-600-to-767 {
+    @media only screen and (min-width: $mg-mobile-600) and (max-width: $mg-mobile-max) {
+        @content;
+    }
+}
+@mixin for-mobile-540-to-767 {
+    @media only screen and (min-width: $mg-mobile-540) and (max-width: $mg-mobile-max) {
+        @content;
+    }
+}
+@mixin for-mobile-475-to-767 {
+    @media only screen and (min-width: $mg-mobile-475) and (max-width: $mg-mobile-max) {
+        @content;
+    }
+}
+@mixin text-overflow($width) {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: $width;
+}
+
+@mixin flex-center($width) {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+@mixin form-link($width) {
+    align-items: center;
+    border: 0;
+    color: $f-dark-violet;
+    display: flex;
+    font-family: 'felix-bold';
+    font-size: 14px;
+    justify-content: center;
+    margin: 0 auto;
+    outline: none;
+    padding: 5px 0 20px 0;
+    text-align: $left;
+    text-decoration: underline;
+}
+
+@mixin flex($display, $align, $direction, $justify) {
+    display: $display;
+    align-items: $align;
+    flex-direction: $direction;
+    justify-content: $justify;
+}
+
+@mixin outline-primary($width) {
+    background: $white;
+    border-radius: 6px;
+    border: 2px solid $f-dark-violet;
+    color: $f-dark-violet;
+    cursor: pointer;
+    font-family: 'felix-semibold';
+    font-size: $f-21;
+    height: 50px;
+    outline: none;
+    padding: 0;
+    transition: all 0.3s ease-in;
+    &:focus {
+        background-color: rgba(83, 43, 159, 0.15);
+    }
+    @include for-mobile-max {
+        font-size: $f-16;
+        height: 48px;
+        width: 100%;
+    }
+}
+
+@mixin positionSticky {
+    position: -webkit-sticky;
+    position: sticky;
+}
+@mixin customScroll {
+    &::-webkit-scrollbar {
+        height: 8px;
+        width: 10px;
+        @include for-mobile-992-max {
+            width: 5px;
+        }
+    }
+    &::-webkit-scrollbar-track {
+        background: $gray-5;
+        border-radius: 10px;
+    }
+    &::-webkit-scrollbar-thumb {
+        background: $grey;
+        border-radius: 10px;
+        border: none;
+    }
+    scroll-behavior: auto;
+    scrollbar-color: $grey $gray-cc;
+    scrollbar-width: thin;
+}
+
+@mixin primaryButton($size, $font) {
+    @include font($size, $white, $font);
+    background: $blue;
+    border: none;
+    border-radius: 4px;
+}
+@mixin image($height, $width, $object-fit) {
+    height: $height;
+    object-fit: $object-fit;
+    width: $width;
+}

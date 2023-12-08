@@ -1,0 +1,61 @@
+@import '../../../../stylesheet/base.scss';
+
+.label,
+.label-input-container .label-text-container {
+    min-width: 150px;
+    // width: fit-content;
+    @include for-mobile-481-down {
+        min-width: 125px !important;
+    }
+}
+.label-input-container {
+    @include for-mobile-767-down {
+        width: 100%;
+    }
+}
+.label-input-container {
+    .colors-container {
+        @include for-mobile-481-down {
+            justify-content: flex-start;
+        }
+    }
+    @include for-mobile-481-down {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .css-1itv6pj-container,
+    .css-70u7ot-container {
+        width: 100%;
+    }
+}
+.mybutton {
+    width: 100%;
+    padding: 10px 20px;
+}
+.exercise-video {
+    min-height: 40px;
+    max-height: 40px;
+    min-width: 40px;
+    max-width: 40px;
+    object-fit: contain;
+    margin-left: 4px;
+    background-color: white;
+    margin-right: 10px;
+    border-radius: 5px;
+    flex-grow: 1;
+}
+.mybutton1 {
+    color: #36f5c7;
+    background-color: transparent;
+    border: 2px solid #36f5c7;
+    padding: 9px 20px;
+}
+.heading {
+    border-bottom: 3px solid;
+    width: max-content;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    margin-left: 10px;
+}

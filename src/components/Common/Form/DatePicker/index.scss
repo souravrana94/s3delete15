@@ -1,0 +1,104 @@
+@import '../../../../stylesheet/base.scss';
+@import '../index.scss';
+.react-datepicker__day--disabled {
+    color: #838383 !important;
+}
+.label-input-container {
+    display: flex;
+    .react-datepicker-wrapper {
+        display: flex;
+        align-items: center;
+    }
+    .customInput {
+        background-color: transparent;
+        width: 100%;
+        color: white;
+        border: 1px solid #c4c4c4 !important;
+        border-radius: 8px;
+        padding: 6px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 8px;
+        padding-right: 8px;
+        margin-bottom: 5px;
+        cursor: pointer;
+    }
+    .label-text-container {
+        text-align: left;
+        display: flex;
+        min-width: 80px;
+        padding-top: 0;
+
+        .label {
+            color: white;
+            height: max-content;
+            width: max-content;
+            margin-top: auto;
+            margin-bottom: auto;
+
+            @include for-mobile-576 {
+                min-width: 100px;
+                max-width: 100px;
+            }
+        }
+    }
+
+    // .input-container {
+    //     display: flex;
+    //     width: 100%;
+
+    //     .input-label {
+    //         padding: 0;
+    //         padding-right: 5px;
+    //         height: max-content;
+    //         margin: auto;
+    //     }
+    // }
+}
+.date-options {
+    background-color: #1f2731;
+    word-wrap: normal;
+    color: white;
+}
+.date-arrow-btn {
+    background-color: $main-card-bg;
+    color: white;
+    border: none;
+}
+.react-datepicker {
+    background: $main-card-bg;
+    color: $white;
+    font-family: $font-Montserrat-Regular;
+}
+.react-datepicker__header {
+    background: $main-card-bg;
+    .react-datepicker__day-name {
+        color: $white;
+    }
+}
+
+.react-datepicker__month-container {
+    .react-datepicker__current-month {
+        color: $white;
+    }
+    .react-datepicker__day--keyboard-selected,
+    .react-datepicker__day--selected {
+        border-radius: 50%;
+    }
+
+    .react-datepicker__day {
+        color: $white;
+        &:hover {
+            border-radius: 50%;
+            background: $green-3;
+            color: $main-card-bg;
+        }
+        .react-datepicker__navigation-icon {
+            color: $white;
+        }
+        .datepicker__navigation-icon {
+            border-color: $white;
+        }
+    }
+}

@@ -1,0 +1,26 @@
+@import '../../../../stylesheet/base.scss';
+
+.todoTable {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    .rowHeading {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        padding-top: 10px;
+        padding-bottom: 5px;
+        padding-left: 10px;
+        .category {
+            width: 35%;
+        }
+        .empty {
+            width: 10%;
+        }
+        .list {
+            width: 55%;
+            align-self: center;
+            text-align: center;
+        }
+    }
+}

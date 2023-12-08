@@ -1,0 +1,51 @@
+@import '../../../../../stylesheet/base.scss';
+
+.table-container {
+    .table-row-container {
+        min-height: 35px;
+        padding: 5px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        @include font($f-size-12, $grey-4, $font-Montserrat-Regular);
+        @include for-mobile-481-down {
+            justify-content: left;
+        }
+        .table-exercise {
+            flex: 1;
+            @include for-mobile-481-down {
+                display: none;
+            }
+        }
+
+        .table-sets,
+        .table-weights,
+        .table-reps {
+            text-align: center;
+            width: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .table-action {
+            width: 25px;
+            align-self: center;
+        }
+        .table-sets {
+            @include for-mobile-481-down {
+                width: 45px !important;
+            }
+        }
+    }
+
+    .table-body-container {
+        width: 100%;
+        .add-exercise-btn {
+            background-color: $grey-7;
+            margin-top: 10px;
+            @include font($f-size-12, $green-1, $font-Montserrat-Regular);
+            padding: 4px;
+        }
+    }
+}

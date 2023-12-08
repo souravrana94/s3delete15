@@ -1,0 +1,157 @@
+@import '../../../../../stylesheet/base.scss';
+
+.feedback-card-container {
+    padding: 10px;
+    background-color: transparent;
+    min-width: 350px;
+    @include for-mobile-481-down {
+        min-width: 0px;
+    }
+    .content {
+        background-color: $grey-7;
+        border-radius: 10px;
+        padding: 15px;
+
+        .routine {
+            padding-left: 20px;
+            @include font($f-size-18, $green-1, $font-Montserrat-SemiBold);
+            line-height: $f-size-20;
+        }
+        .attribute-heading {
+            text-align: center;
+            @include font($f-size-12, $grey-4, $font-Montserrat-Medium);
+            line-height: $f-size-20;
+        }
+        .attribute-text {
+            text-align: center;
+            @include font($f-size-12, $grey-4, $font-Montserrat-Regular);
+            line-height: $f-size-20;
+        }
+        .feedback-heading {
+            @include font($f-size-13, $grey-4, $font-Montserrat-Medium);
+            line-height: $f-size-20;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 5px;
+        }
+        .form-row {
+            //padding-left: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .video-container {
+            padding: 10px;
+            padding-top: 20px;
+        }
+        .comment-box {
+            background-color: $grey-8;
+            display: flex;
+            padding: 10px;
+            margin: auto;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            width: 95%;
+            border-width: 0;
+            border-radius: 10px;
+            @include font($f-size-12, $grey-4, $font-Montserrat-Regular);
+            line-height: $f-size-20;
+        }
+
+        .audio-player {
+            padding: 0 !important;
+            margin: 0 !important;
+            width: 80%;
+        }
+    }
+
+    .table-heading {
+        display: flex;
+        margin-bottom: 20px;
+        //justify-content: space-around;
+        > * {
+            flex: 1;
+            margin: 4px;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            border-bottom: 2px solid;
+            //width: 60px;
+            @include font($f-size-13, white, $font-Montserrat-Medium);
+        }
+    }
+
+    .body {
+        .foodName {
+            @include font($f-size-12, white, $font-Montserrat-Medium);
+            padding: 0 10px 0 5px;
+            margin-bottom: -5px;
+        }
+        input[type='checkbox'] {
+            accent-color: $green-1;
+        }
+        .userFeedback {
+            @include font($f-size-10, white, $font-Montserrat-Regular);
+            font-style: italic;
+            margin-bottom: 5px;
+            margin-top: -3px;
+            padding-left: 5px;
+            .iconfeedback {
+                color: #0d6efd;
+            }
+        }
+        .set-row {
+            display: flex;
+            justify-content: space-around;
+            > * {
+                flex: 1;
+                text-align: center;
+            }
+
+            .rep,
+            .weight {
+                @include font($f-size-11, white, $font-Montserrat-Regular);
+                display: flex;
+                text-align: center;
+                background-color: $grey-8;
+                border-radius: 5px;
+                margin: 4px;
+                padding: 2px;
+                .left {
+                    flex: 1;
+                    color: white;
+                    margin: auto;
+                }
+
+                .right {
+                    flex: 1;
+                    color: $grey-3;
+                    margin: auto;
+                }
+            }
+        }
+    }
+}
+.foodImage {
+    padding: 5px;
+    object-fit: contain;
+    width: 100%;
+    // height: 200px;
+    margin: 0 auto;
+}
+.foodImageZoomed {
+    padding: 5px;
+    height: 300px;
+    margin: 0 auto;
+}
+audio::-webkit-media-controls-panel {
+    background-color: transparent;
+}
+.iconNote {
+    color: #0d6efd;
+}
+.input-text-feedback {
+    @include font($f-size-12, black, $font-Montserrat-Regular);
+    width: 100%;
+}

@@ -1,0 +1,6 @@
+@import '../../../stylesheet/base.scss';
+
+.past-title {
+    @include font($f-size-28, white, $font-Montserrat-SemiBold);
+    margin-bottom: 10px;
+}

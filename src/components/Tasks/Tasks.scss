@@ -1,0 +1,44 @@
+@import '../../stylesheet/base.scss';
+
+.slick-dots li.slick-active button:before {
+    opacity: 1 !important;
+    color: $green-1 !important;
+    font-size: 9px !important;
+}
+
+.slick-dots li button:before {
+    opacity: 0.8 !important;
+    color: white !important;
+}
+.taskScreen {
+    .client-heading {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start !important;
+    }
+    padding-left: 20 !important;
+    padding-right: 20 !important;
+}
+.clientHeader {
+    display: flex;
+    flex-direction: row;
+    .clienth {
+        width: 80%;
+    }
+    .task {
+        display: flex;
+        flex-direction: row-reverse;
+        width: 20%;
+        align-self: flex-end;
+        cursor: pointer;
+        @include font($f-size-28, white, $font-Montserrat-SemiBold);
+        padding: 30px;
+        @include for-mobile-567 {
+            width: 100%;
+            align-self: center;
+        }
+    }
+    @include for-mobile-567 {
+        flex-direction: column;
+    }
+}

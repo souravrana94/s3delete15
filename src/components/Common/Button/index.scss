@@ -1,0 +1,86 @@
+@import '../../../stylesheet/base.scss';
+
+.btn-evolv {
+    background: #242323;
+    border-radius: 6px;
+    color: white;
+    width: 100%;
+    border: 0;
+    padding: 10px;
+    font-weight: 700;
+    transition: all 0.4s ease;
+    margin: auto;
+}
+
+.btn-evolv.btn-xs {
+    font-size: 10px;
+}
+
+.btn-evolv.btn-s {
+    font-size: 13px;
+}
+
+.button-icon {
+    height: 30px;
+    margin-right: 10px;
+    margin-bottom: 2px;
+}
+
+.btn-black:disabled {
+    background-color: #575656;
+}
+
+.btn-green {
+    background-color: $green-1;
+    color: black;
+    margin: auto;
+    width: 30%;
+}
+
+.btn-white {
+    background-color: $white;
+    color: rgb(99, 99, 99);
+    margin: auto;
+}
+
+.btn-red {
+    background-color: red;
+    color: white;
+    width: 30%;
+}
+
+.upload-button-icon {
+    height: 25px;
+    margin-right: 10px;
+    margin-bottom: 2px;
+
+    &.upload-button-icon-s {
+        height: 18px;
+        margin-right: 5px;
+    }
+
+    &.upload-button-icon-m {
+        height: 18px;
+        margin-right: 5px;
+    }
+
+    &.remove-md {
+        @include for-mobile-992-max {
+            display: none;
+        }
+    }
+    &.remove-xs {
+        @include for-mobile-767-down {
+            display: none;
+        }
+    }
+}
+
+// .form-btn {
+//     display: flex;
+// }
+
+.save-btn-container {
+    display: flex;
+    margin: 10px 0px 10px 0px;
+}

@@ -1,0 +1,122 @@
+@import '../../../../../stylesheet/base.scss';
+
+.program-details {
+    margin-bottom: 10px;
+    background-color: $grey-7;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1.2fr 1.2fr 0.7fr 0.5fr 0.7fr 0.5fr 0.5fr 0.5fr;
+    align-items: center;
+    padding: 2px;
+    border-radius: 10px;
+    @include font($f-size-12, white, $font-Montserrat-Regular);
+    @include for-mobile-481-down {
+        grid-template-columns: 1fr 0.5fr 0.5fr 1fr 0.5fr;
+        padding: 0;
+        .program-detail:nth-child(2) {
+            display: none;
+        }
+        .program-detail:nth-child(3) {
+            display: none;
+        }
+        .program-detail:nth-child(4) {
+            display: none;
+        }
+    }
+    .close-icon {
+        cursor: pointer;
+    }
+    .program-detail {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 0 4px;
+        // .user-detail {
+        //     display: flex;
+        //     flex-direction: row;
+        // }
+        .user-detail {
+            .email {
+                @include font($f-size-10, $grey-3, $font-Montserrat-Medium);
+                margin-bottom: 0;
+
+                @include for-mobile-992-max {
+                    display: none;
+                }
+            }
+        }
+        .edit-details {
+            background-color: $main-card-bg;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 5px;
+            max-width: 80px;
+            @include for-mobile-481-down {
+                max-width: 40px;
+            }
+            input {
+                width: 100%;
+                background-color: transparent;
+                border: none;
+                color: white;
+            }
+        }
+        @include for-mobile-992-max {
+            font-size: small;
+        }
+    }
+}
+.verified-program-details {
+    margin-bottom: 10px;
+    background-color: $grey-7;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1.2fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    padding: 2px;
+    @include font($f-size-12, white, $font-Montserrat-Regular);
+    border-radius: 10px;
+    @include for-mobile-481-down {
+        padding: 0;
+    }
+    .close-icon {
+        cursor: pointer;
+    }
+    .program-detail {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 0 4px;
+        .user-detail {
+            .email {
+                @include font($f-size-10, $grey-3, $font-Montserrat-Medium);
+                margin-bottom: 0;
+
+                @include for-mobile-992-max {
+                    display: none;
+                }
+            }
+        }
+        .edit-details {
+            background-color: $main-card-bg;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 5px;
+            max-width: 80px;
+            @include for-mobile-481-down {
+                max-width: 40px;
+            }
+            input {
+                width: 100%;
+                background-color: transparent;
+                border: none;
+                color: white;
+            }
+        }
+        @include for-mobile-992-max {
+            font-size: small;
+        }
+    }
+}

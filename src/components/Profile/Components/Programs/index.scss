@@ -1,0 +1,29 @@
+@import '../../../../stylesheet/base.scss';
+.programs-container {
+    min-width: 490px;
+    @include for-mobile-767-down {
+        min-width: 0;
+    }
+    margin-bottom: 10px;
+    .accordion-container {
+        .shadow-div {
+            background-color: $main-card-bg;
+            .accordion-body {
+                background-color: $main-background;
+            }
+        }
+    }
+    .heading {
+        border-bottom: 3px solid;
+        width: max-content;
+        font-size: 30px;
+        font-weight: 600;
+        margin-bottom: 30px;
+        margin-left: 10px;
+    }
+    .add-button {
+        width: 100%;
+        background-color: $main-card-bg;
+        color: $green-1;
+    }
+}

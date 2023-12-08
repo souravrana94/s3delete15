@@ -1,0 +1,97 @@
+{
+    "name": "trainer-dashboard",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+        "@emotion/cache": "^11.10.5",
+        "@emotion/styled": "^11.10.6",
+        "@material-ui/core": "^4.12.3",
+        "@material-ui/lab": "^4.0.0-alpha.60",
+        "@mui/icons-material": "^5.11.11",
+        "@mui/material": "^5.11.14",
+        "@mui/styled-engine": "^5.11.11",
+        "@ramonak/react-progress-bar": "^5.0.3",
+        "axios": "^0.21.4",
+        "bootstrap": "^5.1.1",
+        "chart.js": "^3.9.1",
+        "classnames": "^2.3.1",
+        "date-fns": "^2.29.2",
+        "env-cmd": "^10.1.0",
+        "export-to-csv": "^1.0.0",
+        "firebase": "^9.6.8",
+        "jquery": "^3.5.1",
+        "lamejs": "^1.2.1",
+        "mic-recorder-to-mp3": "^2.2.2",
+        "moment": "^2.29.3",
+        "popper.js": "^1.16.1",
+        "prop-types": "^15.7.2",
+        "rc-slider": "^9.7.5",
+        "react": "^17.0.2",
+        "react-beautiful-dnd": "^13.1.0",
+        "react-bootstrap": "^2.5.0",
+        "react-chartjs-2": "^4.3.1",
+        "react-circular-progressbar": "^2.0.4",
+        "react-datepicker": "^4.2.1",
+        "react-dom": "^17.0.2",
+        "react-dropdown": "^1.11.0",
+        "react-dropzone": "^11.4.2",
+        "react-firebase-hooks": "^5.0.3",
+        "react-google-login": "^5.2.2",
+        "react-hook-form": "^6.15.5",
+        "react-icons": "^4.3.1",
+        "react-lazy-load-image-component": "^1.5.1",
+        "react-media-recorder": "^1.6.3",
+        "react-player": "^2.12.0",
+        "react-rating-stars-component": "^2.2.0",
+        "react-router-dom": "^5.3.1",
+        "react-scripts": "^5.0.1",
+        "react-select": "^5.7.3",
+        "react-slick": "^0.28.1",
+        "react-table": "^7.7.0",
+        "react-tooltip": "^4.2.21",
+        "react-youtube": "^10.1.0",
+        "redux-thunk": "^2.3.0",
+        "sass": "^1.42.1",
+        "slick-carousel": "^1.8.1",
+        "source-map-explorer": "^2.5.2",
+        "validator": "^13.7.0",
+        "victory": "^36.6.8",
+        "webpack-bundle-analyzer": "^4.5.0"
+    },
+    "scripts": {
+        "start": "react-scripts start",
+        "dev": "env-cmd -f ./config/.env.development react-scripts start",
+        "prod": "env-cmd -f ./config/.env.prod react-scripts start",
+        "build": "react-scripts build",
+        "build:dev": "env-cmd -f ./config/.env.development react-scripts build",
+        "build:prod": "env-cmd -f ./config/.env.prod react-scripts build",
+        "test": "react-scripts test",
+        "eject": "react-scripts eject",
+        "mock:api": "json-server --watch ./db.json --routes ./routes.json --port 8080"
+    },
+    "eslintConfig": {
+        "extends": "react-app"
+    },
+    "browserslist": [
+        ">0.2%",
+        "not dead",
+        "not op_mini all"
+    ],
+    "devDependencies": {
+        "@iconify/react": "^3.2.1",
+        "eslint": "^7.32.0",
+        "eslint-plugin-react": "^7.26.0",
+        "husky": "^4.3.8",
+        "lint-staged": "^10.5.4",
+        "prettier": "^2.4.1",
+        "redux-devtools-extension": "^2.13.8"
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "lint-staged"
+        }
+    },
+    "lint-staged": {
+        "**/*": "prettier --write --ignore-unknown"
+    }
+}

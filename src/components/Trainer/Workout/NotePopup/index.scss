@@ -1,0 +1,161 @@
+@import '../../../../stylesheet/base.scss';
+.notePopup {
+    width: 100%;
+    height: 100%;
+    border-width: 1px;
+    border-color: #e8edf3;
+    background-color: rgba(0, 0, 0, 0.864);
+    display: flex;
+    z-index: 9998;
+    justify-content: center;
+    align-items: center;
+}
+
+.notePopup-content {
+    background-color: rgb(33, 38, 47);
+    // border-radius: 8px;
+    // padding: 20px;
+    // max-width: 500px;
+    // max-height: 80vh;
+    border-width: 1px;
+    border-color: #e8edf3;
+    width: 100%;
+    max-height: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.notesList {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto !important;
+    max-height: 80vh;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 8px;
+    margin-bottom: 20px;
+}
+
+.noteField {
+    background-color: #040d12;
+    padding: 8px;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    word-wrap: break-word; /* Wrap text within the box */
+}
+
+.noteContainer {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px; /* Add some space between notes */
+}
+
+.noteDate {
+    color: #999;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.addNoteField {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+textarea {
+    flex: 1;
+    resize: none;
+    background-color: #38444f;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 8px;
+    width: 100%;
+    /* Custom styles for the textarea font */
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    color: #f0ebeb;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    // margin-top: 0px;
+    // margin-bottom: 0px;
+}
+
+/* Style for "Save" and "Back" buttons */
+button {
+    border: none;
+    background-color: #041220;
+    color: #36f5c7;
+    border-radius: 4px;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: 8px;
+}
+
+button:hover {
+    background-color: #38444f;
+}
+
+.addNote {
+    cursor: pointer;
+    margin-left: 8px;
+    font-size: 14px;
+    color: #36f5c7;
+}
+// .backNote{
+//     cursor: pointer;
+//     margin-right: 8px;
+//     font-size: 14px;
+//     color: #36f5c7;
+// }
+
+.editNote {
+    cursor: pointer;
+    margin-left: 50%;
+    font-size: 14px;
+    color: #36f5c7;
+}
+
+.deleteNote {
+    cursor: pointer;
+    margin-right: 10px;
+    font-size: 14px;
+    color: #36f5c7;
+}
+
+.cancelNote {
+    cursor: pointer;
+    margin-right: 10px;
+    font-size: 14px;
+    color: #36f5c7; /* Change this to your desired color */
+}
+.saveNote {
+    cursor: pointer;
+    margin-left: 50%;
+    font-size: 14px;
+    color: #36f5c7; /* Change this to your desired color */
+}
+
+.editNote:hover,
+.deleteNote:hover,
+.saveNote:hover,
+.cancelNote:hover {
+    color: #839d97; /* Change this to your desired hover color */
+}
+
+.username {
+    color: #36f5c7;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

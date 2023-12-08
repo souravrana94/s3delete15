@@ -1,0 +1,89 @@
+@import '../../../../../stylesheet/base.scss';
+
+.Nutritioncompleted-header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    @include for-mobile-481-down {
+        flex-direction: column;
+    }
+    .routine-data {
+        align-self: center;
+        padding-left: 10px;
+        @include for-mobile-481-down {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        .routine-name {
+            @include font($f-size-18, $green-1, $font-Montserrat-SemiBold);
+            line-height: $f-size-20;
+        }
+        .scheduled-date {
+            @include font($f-size-13, $grey-4, $font-Montserrat-Medium);
+        }
+    }
+    .progressLabel {
+        @include font($f-size-10, $white, $font-Montserrat-Regular);
+        padding-right: 5px;
+        min-width: 45px;
+    }
+    .progress-feedback {
+        display: flex;
+        @include for-mobile-481-down {
+            width: 100%;
+            justify-content: space-between;
+        }
+        .userFeedback {
+            .tooltip-container-comment {
+                padding: 10px 10px 8px 8px !important;
+                text-align: center;
+                width: 60%;
+                max-width: 60vw !important;
+                max-height: 150vh !important;
+                background-color: rgba($color: #000000, $alpha: 1) !important;
+                padding: 10px 0;
+                border-radius: 10px !important;
+            }
+        }
+        .feedback {
+            text-align: right;
+            align-self: center;
+            @include font($f-size-12, $grey-4, $font-Montserrat-SemiBold);
+            padding-right: 10px;
+            .analysis {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                margin-left: 5px;
+                .workout-time,
+                .feedback-text {
+                    text-align: left;
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 5px;
+                    margin-left: 5px;
+                }
+                .analysis-icon {
+                    margin-right: 3px;
+                    margin-left: 3px;
+                    margin-bottom: 2px;
+                }
+                .tooltip-container {
+                    text-align: center;
+                    background-color: rgba(
+                        $color: #000000,
+                        $alpha: 1
+                    ) !important;
+                    padding: 10px 0;
+                    border-radius: 10px !important;
+                }
+            }
+        }
+
+        .circular-progress-bar {
+            height: 45px;
+            width: 45px;
+            margin: 10px;
+        }
+    }
+}

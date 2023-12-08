@@ -1,0 +1,210 @@
+@import '../../../../stylesheet/base.scss';
+
+.steps {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include font($f-size-20, white, $font-Montserrat-SemiBold);
+    padding-top: 20px;
+    margin-right: 20px;
+    width: 50%;
+    .stepsHeader {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        @include font($f-size-25, white, $font-Montserrat-SemiBold);
+        .stepsText {
+            width: 15%;
+            align-self: flex-start;
+            @include for-mobile-481-down {
+                width: 36%;
+            }
+        }
+        .streak {
+            display: flex;
+            flex-direction: row;
+            width: 29%;
+            padding: 0;
+            align-self: flex-end;
+            @include for-mobile-481-down {
+                display: none;
+            }
+        }
+        .text {
+            width: 24%;
+            align-self: flex-end;
+            @include font($f-size-13, white, $font-Montserrat-SemiBold);
+            @include for-mobile-481-down {
+                width: 32%;
+                @include font($f-size-11, white, $font-Montserrat-SemiBold);
+            }
+        }
+        .efficiency {
+            width: 8%;
+            align-self: flex-end;
+            @include font($f-size-13, white, $font-Montserrat-SemiBold);
+            @include for-mobile-481-down {
+                display: none;
+            }
+        }
+    }
+    .stepsScreen {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        background-color: $grey-8;
+        border-radius: 10px;
+        padding: 15px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        -moz-box-shadow: 0 0 15px 0px rgba(0, 0, 0, 0.4) !important;
+        -webkit-box-shadow: 0 0 15px 0px rgba(0, 0, 0, 0.4) !important;
+        box-shadow: 0 0 15px 0px rgba(0, 0, 0, 0.4) !important;
+        .selector {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            .textContainer {
+                width: 75%;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                @include for-mobile-481-down {
+                    width: 60%;
+                    @include font($f-size-11, white, $font-Montserrat-SemiBold);
+                }
+                .dateText {
+                    padding-left: 15px;
+                    padding-right: 15px;
+                }
+            }
+            .dropDown {
+                width: 25%;
+                align-self: flex-end;
+                @include for-mobile-481-down {
+                    width: 40%;
+                    @include font($f-size-11, white, $font-Montserrat-SemiBold);
+                }
+            }
+        }
+        .icons-Container {
+            padding-top: 20px;
+            display: flex;
+            flex-direction: row;
+            padding-bottom: 10px;
+            .targetText {
+                width: 95%;
+            }
+        }
+        .targetsContainer {
+            display: flex;
+            flex-direction: row;
+            margin-left: -5px;
+            margin-right: -5px;
+            @include font($f-size-12, white, $font-Montserrat-SemiBold);
+            background-color: #1f2731;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            border-radius: 5px;
+            .targetsHeader {
+                width: 10%;
+                display: flex;
+                flex-direction: column;
+                border-color: black;
+                border-style: solid;
+                border-width: 1px;
+                text-align: center;
+                .dayText {
+                    background-color: darkslategrey;
+                    text-align: center;
+                }
+                @include for-mobile-481-down {
+                    width: 100%;
+                    flex-direction: row;
+                    @include font($f-size-11, white, $font-Montserrat-SemiBold);
+                    .date {
+                        width: 33%;
+                    }
+                    .dayText {
+                        width: 33%;
+                        text-align: center;
+                    }
+                    .targetText {
+                        width: 34%;
+                        text-align: center;
+                    }
+                }
+            }
+            .targets {
+                @include font($f-size-12, white, $font-Montserrat-Regular);
+                width: 9%;
+                border-color: black;
+                border-style: solid;
+                border-width: 1px;
+                align-items: center;
+                align-content: center;
+                .targetSteps {
+                    text-align: center;
+                }
+                .targetInput {
+                    background-color: black;
+                    border: none;
+                    border-radius: 2px;
+                    width: 45px;
+                    height: $f-size-16;
+                    color: white;
+                    margin-left: 3px;
+                    align-self: center;
+                    text-align: center;
+                }
+                .day {
+                    background-color: darkslategrey;
+                    text-align: center;
+                }
+                .date {
+                    text-align: center;
+                }
+                @include for-mobile-481-down {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    @include font($f-size-11, white, $font-Montserrat-SemiBold);
+                    @include font($f-size-11, white, $font-Montserrat-SemiBold);
+                    .date {
+                        width: 33%;
+                        text-align: center;
+                    }
+                    .day {
+                        width: 33%;
+                        text-align: center;
+                        margin-left: 0px;
+                        margin-right: 0px;
+                    }
+                    .targetInput {
+                        width: 30%;
+                        text-align: center;
+                        margin-left: 5px;
+                        margin-right: 0px;
+                    }
+                    .targetSteps {
+                        width: 34%;
+                        text-align: center;
+                    }
+                }
+            }
+            @include for-mobile-481-down {
+                flex-direction: column;
+                @include font($f-size-11, white, $font-Montserrat-SemiBold);
+                padding-left: 5px;
+                padding-right: 5px;
+            }
+        }
+    }
+    @include for-mobile-481-down {
+        @include font($f-size-13, white, $font-Montserrat-SemiBold);
+        padding-top: 20px;
+        margin-left: 20px;
+        width: 100%;
+    }
+}

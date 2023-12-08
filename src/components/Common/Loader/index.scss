@@ -1,0 +1,30 @@
+@import '../../../stylesheet/base.scss';
+
+.loading-bg {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    margin: 0px;
+    padding: 0px;
+    top: 0px;
+    left: 0px;
+    z-index: 9999999;
+    display: flex;
+    background-color: $grey-7;
+    > * {
+        margin: auto;
+    }
+}
+
+.loading-text {
+    transform: translateY(-50px);
+}
+
+.full-height-div {
+    min-height: 60vh;
+    display: flex;
+    justify-content: center;
+    > * {
+        margin: auto;
+    }
+}

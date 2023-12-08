@@ -1,0 +1,119 @@
+@import '../../../../../stylesheet/base.scss';
+
+.transformation-container {
+    background: transparent;
+    margin: 20px;
+    min-width: 328px;
+    max-width: 328px;
+    border-radius: 20px;
+    @include for-mobile-992-max {
+        min-width: 0;
+    }
+    .card {
+        border-radius: 20px;
+    }
+    .card-img {
+        border-radius: 20px;
+        object-fit: cover;
+    }
+    .card-image {
+        border-radius: 20px;
+        height: 200px;
+    }
+    .card-image-overlay {
+        border-radius: 20px;
+        padding: 0%;
+    }
+    .close-button {
+        z-index: 1;
+        position: relative;
+        bottom: 95%;
+        left: 90%;
+        width: fit-content;
+    }
+    .content {
+        border-radius: 20px;
+        display: flex;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #0000004d;
+
+        .title {
+            width: 40%;
+            min-width: 120px;
+            background-color: #000000b2;
+            padding: 2px;
+            padding-left: 20px;
+            padding-right: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            .days-edit-container {
+                display: flex;
+                align-items: center;
+                .days {
+                    width: 40px;
+                    margin-top: 5px;
+                    margin-right: 2px;
+                    padding: 1px;
+                    padding-left: 5px;
+                }
+            }
+        }
+
+        .weight-container {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            padding-bottom: 10px;
+            .weight {
+                background-color: #fcc6c6;
+                padding-left: 10px;
+                padding-right: 10px;
+                border-radius: 6px;
+                max-width: 80px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .weight-value {
+                    color: black;
+                    font-weight: bold;
+                    margin: 0px;
+                }
+                .weight-edit {
+                    margin: 5px;
+                    border: 1px solid rgb(70, 69, 69);
+                    padding: 0px;
+                    padding-left: 2px;
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+    .card-title {
+        margin-top: 10px;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+
+        .title-name {
+            margin: 0;
+        }
+        .card-actions {
+            display: flex;
+            justify-content: space-evenly;
+
+            .action-icons {
+                cursor: pointer;
+                margin-left: 10px;
+            }
+        }
+    }
+}

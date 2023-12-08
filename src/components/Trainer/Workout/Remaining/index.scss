@@ -1,0 +1,63 @@
+@import '../../../../stylesheet/base.scss';
+
+.workout-cycle-modal {
+    .modal-container {
+        @include for-mobile-767-down {
+            padding-left: 6px;
+            padding-right: 6px;
+        }
+    }
+}
+.workout-remaining-container {
+    margin-top: 40px;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    padding-right: 30px;
+    padding-left: 30px;
+    @include for-mobile-567 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .workout-remaining-title {
+        @include font($f-size-28, white, $font-Montserrat-SemiBold);
+        margin-bottom: 10px;
+    }
+
+    .open-cycle {
+        display: flex;
+        align-items: center;
+        padding-bottom: 14px;
+        > * {
+            margin-right: 20px;
+            cursor: pointer;
+        }
+
+        .cycle-breif {
+            @include font($f-size-15, white, $font-Montserrat-Medium);
+            line-height: $f-size-18;
+        }
+    }
+
+    .time-container {
+        display: flex;
+        align-items: center;
+        padding-bottom: 14px;
+    }
+
+    .add-session-btn {
+        margin-bottom: 14px;
+        flex: unset;
+        width: max-content;
+        height: max-content;
+        padding-left: 10px;
+        padding-right: 10px;
+        color: $green-1;
+        background-color: $main-card-bg;
+    }
+
+    .add-cycle-session-btn {
+        margin-left: 7px;
+    }
+}

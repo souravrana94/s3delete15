@@ -1,0 +1,7 @@
+@import '../../../../stylesheet/base.scss';
+
+.workout-completed-title {
+    @include font($f-size-28, white, $font-Montserrat-SemiBold);
+    padding-top: 20px;
+    padding-left: 40px;
+}

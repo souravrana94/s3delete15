@@ -1,0 +1,99 @@
+@import '../../../../stylesheet/base.scss';
+
+.weights {
+    display: flex;
+    flex-direction: column;
+    // align-items: center;
+    align-self: flex-start;
+    @include font($f-size-20, white, $font-Montserrat-SemiBold);
+    padding-top: 20px;
+    width: 50%;
+    .weightsHeader {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        @include font($f-size-25, white, $font-Montserrat-SemiBold);
+        .weightText {
+            width: 40%;
+            align-self: flex-start;
+            @include for-mobile-481-down {
+                width: 50%;
+            }
+        }
+        .delta {
+            display: flex;
+            flex-direction: row;
+            width: 35%;
+            padding: 0;
+            align-self: flex-end;
+            @include font($f-size-13, white, $font-Montserrat-SemiBold);
+            @include for-mobile-481-down {
+                display: none;
+            }
+        }
+        .text {
+            width: 25%;
+            align-self: flex-end;
+            @include font($f-size-13, white, $font-Montserrat-SemiBold);
+            @include for-mobile-481-down {
+                width: 50%;
+                @include font($f-size-11, white, $font-Montserrat-SemiBold);
+            }
+        }
+    }
+    .weightScreen {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        background-color: $grey-8;
+        border-radius: 10px;
+        padding: 15px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        -moz-box-shadow: 0 0 15px 0px rgba(0, 0, 0, 0.4) !important;
+        -webkit-box-shadow: 0 0 15px 0px rgba(0, 0, 0, 0.4) !important;
+        box-shadow: 0 0 15px 0px rgba(0, 0, 0, 0.4) !important;
+        .selector {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            .textContainer {
+                width: 75%;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                @include for-mobile-481-down {
+                    width: 60%;
+                    @include font($f-size-11, white, $font-Montserrat-SemiBold);
+                }
+                .dateText {
+                    padding-left: 15px;
+                    padding-right: 15px;
+                }
+            }
+            .dropDown {
+                width: 25%;
+                align-self: flex-end;
+                @include for-mobile-481-down {
+                    width: 40%;
+                    @include font($f-size-11, white, $font-Montserrat-SemiBold);
+                }
+            }
+        }
+        .icons-Container {
+            padding-top: 20px;
+            display: flex;
+            flex-direction: row;
+            padding-bottom: 10px;
+            .targetText {
+                width: 95%;
+            }
+        }
+    }
+    @include for-mobile-767-down {
+        @include font($f-size-13, white, $font-Montserrat-SemiBold);
+        padding-top: 20px;
+        width: 100%;
+    }
+}

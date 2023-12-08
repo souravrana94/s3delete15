@@ -1,0 +1,73 @@
+@import '../../../../stylesheet/base.scss';
+.profile-container {
+    max-width: 789px;
+    .profile-progress-bar {
+        margin-bottom: 30px;
+        .progress-header {
+            margin: 0%;
+            margin-bottom: 5px;
+        }
+        .progress-bar-div {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .slider {
+                pointer-events: none;
+                .rc-slider-handle {
+                    pointer-events: auto;
+                }
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 80%;
+                .rc-slider-handle {
+                    display: none;
+                }
+            }
+            .progress-text {
+                margin: 0px;
+                min-width: 128px;
+                text-align: end;
+            }
+        }
+    }
+    .heading {
+        border-bottom: 3px solid;
+        width: max-content;
+        font-size: 30px;
+        font-weight: 600;
+        margin-bottom: 30px;
+        margin-left: 10px;
+    }
+    .text-area {
+        width: 100%;
+    }
+    .profile-preview-card {
+        background-color: white;
+        max-width: 400px;
+        border-radius: 20px;
+        padding-bottom: 20px;
+        padding-top: 50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        .card-label {
+            margin-right: 30px;
+            color: black;
+            @include for-mobile-481-down {
+                margin: 0px;
+                margin-bottom: 50px;
+            }
+        }
+        .preview-card-container {
+            box-shadow: none;
+        }
+        @include for-mobile-481-down {
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            padding-top: 20px;
+        }
+    }
+}

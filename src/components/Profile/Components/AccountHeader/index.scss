@@ -1,0 +1,48 @@
+@import '../../../../stylesheet/base.scss';
+
+.profile-image-text {
+    display: flex;
+    width: max-content;
+    max-width: 100%;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    .profile-container {
+        position: relative;
+        border-radius: 50%;
+        overflow: hidden;
+        height: 80px;
+        width: 80px;
+        .profile-image {
+            height: 100%;
+            width: 100%;
+        }
+    }
+
+    .name-container {
+        padding-left: 15px;
+        width: calc(100% - 80px);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .fullname {
+            font-weight: 700;
+            margin-bottom: 0;
+            font-size: x-large;
+        }
+        .username {
+            margin-bottom: 0;
+            font-size: small;
+        }
+    }
+
+    @include for-mobile-767-down {
+        .profile-container {
+            margin-left: 0;
+            margin-right: 0;
+        }
+    }
+}

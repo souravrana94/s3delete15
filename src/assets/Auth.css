@@ -1,0 +1,64 @@
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+.auth.card-container.card {
+    margin: auto;
+}
+
+.auth-subtitle {
+    font-weight: 600;
+}
+
+.auth.card {
+    min-width: 30vw;
+    background-color: transparent;
+    padding: 10px 10px 5px;
+    margin: 0 auto 25px;
+    border-color: transparent;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    border-radius: 15px;
+    -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.auth.profile-img-card {
+    width: 50px;
+    height: 50px;
+    margin: 0 auto 10px;
+    display: block;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.close-button {
+    text-align: right;
+}
+
+.auth-small-font {
+    color: #8d8d8d;
+    font-family: 'Montserrat-Regular';
+    font-size: 12px;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.auth-box {
+    max-width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.login-button,
+.login-button:hover,
+.login-button:disabled {
+    background-color: black;
+    border-color: black;
+    color: white;
+    font-family: 'Montserrat-Regular';
+}

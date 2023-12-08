@@ -1,0 +1,88 @@
+@import '../../../../stylesheet/base.scss';
+
+// TODO imporove CSS
+
+.gender-container {
+    display: flex;
+
+    .option-container {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .Transgender {
+        .trans-img {
+            width: 13px;
+            height: 15px;
+        }
+    }
+    .circle {
+        width: inherit;
+        height: 4px;
+        margin: auto;
+
+        > img {
+            display: block;
+
+            margin: auto;
+            margin-right: 4px;
+        }
+    }
+
+    .icon-container {
+        width: 13px;
+        margin: auto;
+        margin-left: 45%;
+        display: inline-grid;
+        height: 24px;
+        vertical-align: bottom;
+    }
+
+    .icon-text {
+        width: fit-content;
+        margin: auto;
+        font-size: 0.75rem;
+    }
+
+    .selected {
+        filter: invert(42%) sepia(251%) saturate(393%) hue-rotate(110deg)
+            brightness(100%) contrast(87%);
+    }
+
+    .not-selected {
+        filter: invert(22%) sepia(141%) saturate(1%) hue-rotate(49deg)
+            brightness(97%) contrast(321%);
+    }
+    .gender-text {
+        padding-top: 9px;
+        font-size: 14px;
+    }
+
+    @include for-mobile-767-down {
+        .male {
+            width: 25%;
+        }
+        .female {
+            width: 25%;
+        }
+        .Transgender {
+            width: 25%;
+        }
+        .gender-text {
+            width: 25%;
+        }
+        .gender-container {
+            margin-left: 0px;
+        }
+    }
+
+    @media screen and (min-width: 1020px) {
+        .male {
+            width: 20%;
+        }
+        .female {
+            width: 20%;
+        }
+    }
+}

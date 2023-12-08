@@ -1,0 +1,38 @@
+@import '../../../../stylesheet/base.scss';
+
+.color-selection-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    .label {
+        min-width: 150px;
+        max-width: 150px;
+    }
+    .colors-container {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: space-evenly;
+        align-items: center;
+        .color-option-container {
+            width: 30px;
+            height: 30px;
+            margin: 10px;
+            background-color: white;
+            border: 3px solid white;
+            border-radius: 7px;
+            cursor: pointer;
+        }
+        .color-option-container-selected {
+            width: 30px;
+            height: 30px;
+            margin: 10px;
+            background-color: white;
+            border: 3px solid #38cc9e;
+            border-radius: 7px;
+            transform: scale(1.1);
+            cursor: pointer;
+        }
+    }
+}

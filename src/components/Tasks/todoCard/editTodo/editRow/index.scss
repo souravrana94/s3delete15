@@ -1,0 +1,39 @@
+@import '../../../../../stylesheet/base.scss';
+
+.editable-row {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    width: 100%;
+    padding: 5px;
+    .list-header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .category {
+        @include font($f-size-16, $white, $font-Montserrat-SemiBold);
+    }
+    .item {
+        width: 100%;
+        padding: 3px;
+        @include font($f-size-15, $grey-1, $font-Montserrat-Medium);
+        .text-area {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            .editable-item {
+                color: white;
+                border: none;
+                -webkit-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                box-sizing: border-box;
+                resize: none;
+                width: 100%;
+                background-color: $grey-8;
+            }
+        }
+    }
+}

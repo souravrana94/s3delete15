@@ -1,0 +1,40 @@
+@import '../../../../stylesheet/base.scss';
+
+.transformations-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include for-mobile-992-max {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .label {
+        min-width: 150px;
+        width: 15%;
+        @include for-mobile-992-max {
+            width: 100%;
+        }
+    }
+    .carousel-container {
+        margin: 10px;
+        background-color: #0f1215;
+        border-radius: 30px;
+        padding: 2rem;
+        @include for-mobile-992-max {
+            padding: 1rem;
+            width: 100%;
+        }
+        .add-transformation-btn-container {
+            margin: 20px;
+            border-radius: 10px;
+            .add-transformation-btn {
+                min-width: 300px;
+                max-width: 300px;
+                height: 200px;
+                color: #38cc9e;
+                font-size: 20px;
+            }
+        }
+    }
+}

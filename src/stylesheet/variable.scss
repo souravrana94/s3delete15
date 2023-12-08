@@ -1,0 +1,314 @@
+// Green Shades
+$main-background: #1f2731;
+$main-card-bg: #101317;
+$green-1: #36f5c7;
+$green-2: #c5ffcd;
+$green-3: #8fec9d;
+$green-4: #38cc9e;
+
+// Grey Shades
+$grey-1: #bcbcbc;
+$grey-2: #252c35;
+$grey-3: #969696;
+$grey-4: #d1d1d1;
+$grey-5: #9c9c9c;
+$grey-6: #19212a;
+$grey-7: #1e262f;
+$grey-8: #0f1215;
+
+// Red Shades
+$red-1: #ff2f2f;
+
+// Cyan Shades
+$cyan-1: #c4fef7;
+
+// Background
+$frame-1: #1f2731;
+$cards-1: #1981e1;
+$cards-2: #101317;
+
+// Shadows
+$shadow-1: #000000;
+$shadow-2: #2d3949;
+
+/*color*/
+$bg-color-gray2: #d8d8d8;
+$bg-color-gray3: #ebebeb;
+$bg-color-gray: #eff3ff;
+$bg-color-lightBlue: #e5ebff;
+$bg-color-skyblue-light: #a8bdff;
+$bg-color-skyblue: #5880ff;
+$bittersweet: #ff6e6e;
+$black-russian: #17181a;
+$blue-8: #87a4ff;
+$blue-c: #ccd9ff;
+$blue-new-home: #066afb;
+$brd-color-lightBlue: #e5ebff;
+$bronze: #ffa98a;
+$caribbean-green-2: #0dc29f;
+$charcol: #212529;
+$coral-blue: #5a81ff;
+$dark-blue: #2a54dd;
+$f-color-black: #000;
+$f-color-blue: #2f60ff;
+$f-color-dark-black: #22252a;
+$f-color-dark-blue: #2e5fff;
+$f-color-dark-grayish-navy: #525660;
+$f-color-dark2-blue: #00366f;
+$f-color-light-black: #626669;
+$f-color-light-blue: #8899cd;
+$f-color-light-gray: #525660;
+$f-color-lightBlue: #6172a7;
+$f-color-white: #fff;
+$gold: #cea00d;
+$gray-2: #4f4f4f;
+$gray-3: #838383;
+$gray-5: #e5e5e5;
+$gray-94: #f0f0f0;
+$green: #00cd7d;
+$lavender-light: #e7e8ef;
+$ligh-royal-blue: #d0dbfc;
+$light-blue: #cad6ee;
+$light-blue: #e6edff;
+$light-green-2: #94faec;
+$light-pink-lace: #d0dbfe;
+$light-purple: rgba(47, 96, 255, 0.5);
+$light-red: #ff7064;
+$pink1: #f5367f;
+$nero: #282828;
+$noble-light: #9b9b9b;
+$pink-lace: #8ba8ff;
+$rusty-red: #d82f44;
+$silver: #7997bb;
+$snow: #f9f9f9;
+$soft-blue: #96dbfa;
+$tb-brd: #e8e8e8;
+$tb-dash-brd: #efefef;
+$white-smoke: #f1f1f1;
+/*end*/
+
+/*background color*/
+$f-bg-black: #000;
+$f-bg-white: #fff;
+$f-bg-light-white: #f9f9f9;
+$f-bg-blue: #2f60ff;
+$f-bg-light-blue: #e5ebff;
+$home-bg-gray: #ebeff2;
+$c-gray: #888;
+$f-color-g: #6d7278;
+$f-color-90: #909099;
+$f-color-dgray: #495057;
+$f-color-8a: #8a8f9c;
+$light-gray: #f7f8fa;
+$lighter-gray: #d0d0d0;
+$tranpr: transparent;
+$transparent-black: rgba(0, 0, 0, 0.8);
+$transparant-green: #00ce7d1a;
+$lightest-blue: #f6f9ff;
+$light-shadow: rgba(0, 0, 0, 0.2);
+$light-solitude: #f1f5ff;
+$nobel: #a2a2a2;
+$green: #51a352;
+$card-bg: rgba(16, 19, 23, 1);
+
+// Vertical Heights
+$h-100: 100vh;
+$h-90: 90vh;
+$h-80: 80vh;
+$h-70: 70vh;
+$h-60: 60vh;
+$h-50: 50vh;
+$h-40: 40vh;
+$h-30: 30vh;
+$h-20: 20vh;
+$h-10: 10vh;
+$h-0: 0vh;
+
+/*outline*/
+$f-outline: none;
+/*media-query*/
+$mg-Bigdesktop-max: 3000px;
+$mg-Bigdesktop-min: 1921px;
+$mg-Bigdesktop-max-up: 1920px;
+$mg-desktop-max-up: 1400px;
+$mg-desktop-max: 1340px;
+$mg-desktop-mid: 1200px;
+$mg-desktop-min: 1025px;
+
+$mg-tablet-max: 1024px;
+$mg-tablet-mid: 992px;
+$mg-tablet-min: 768px;
+
+$mg-mobile-max: 767px;
+$mg-mobile-mid: 568px;
+$mg-mobile-min: 420px;
+
+$mg-desktop-1199: 1199px;
+$mg-desktop-1380: 1380px;
+$mg-desktop-1920: 1920px;
+$mg-desktop-1180: 1180px;
+$mg-tablet-1023: 1023px;
+$mg-tablet-810: 810px;
+$mg-mobile-767: 767px;
+$mg-mobile-768: 768px;
+$mg-tablet-769: 769px;
+$mg-mobile-600: 600px;
+$mg-mobile-576: 576px;
+$mg-mobile-567: 567px;
+$mg-mobile-540: 540px;
+$mg-mobile-481: 481px;
+$mg-mobile-415: 415px;
+$mg-mobile-414: 414px;
+$mg-mobile-475: 475px;
+$mg-mobile-375: 375px;
+$mg-mobile-374: 374px;
+$mg-mobile-321: 321px;
+$mg-desktop-1225: 1225px;
+
+/*Gurantee*/
+
+/* Primary colors */
+$blue: #2f60ff;
+$blue-2: #2e60ff;
+
+/* Neutrals */
+$black: #000;
+$gray: #aaa;
+$gray-cc: #ccc;
+$gray-hr: #eaeaea;
+$gray-light: #f9f9f9;
+$white: #ffffff;
+$gray-light2: #efefef;
+$gray-97: #979797;
+$gy: #eaefff;
+$athens-gray: #e1e3eb;
+$light-mute: #5c5d5f;
+$hampton: #142761;
+$gray-70: #b3b3b3;
+$grey-9: #e9ecef;
+$light-blue2: #2076d2;
+
+/* Secondary */
+$blue-dark: #286592;
+$green: #00cc6e;
+$red: #cf3c3c;
+$teal: #50e3c2;
+$red-dark: red;
+$nero: #181818;
+$solitude2: #e2e4e6;
+/* Third-party */
+$blue-walmart: #007dc6;
+$light-caribbean-green: #2ce19a;
+$orange-red: #ff4800;
+$orange: #ff3206;
+$light-green: #eaf9f0;
+$light-grey: #c4c4c4;
+$filter-grey: #ebeff2;
+$light-green: #76f7d9;
+
+/* Hover colors -- use only for hover states */
+$alice-blue: #f9fafc;
+$aquamarin: #82b5ff;
+$blue-3: #3961e3;
+$blue-8: #82a0ff;
+$blue-dark-hover: #648fae;
+$blue-hover: #66aed2;
+$caribbean-green: #00ce7d;
+$cod-grey: #2f3337;
+$cool-gray-hover: #848788;
+$cyan-hover: #48caf1;
+$grayish-dark: #4b4e57;
+$green-hover: #87d3a7;
+$grey: #7f7f7f;
+$light-blue: #e9f0ff;
+$light-sky-blue-1: #91c3ff;
+$light-sky-blue: #90c3ff;
+$light-solitude: #eaeef647;
+$light-transparent-blue: rgba(135, 164, 255, 0.3);
+$lynx-white: #f7f7f7;
+$navy-blue: #14349d;
+$ocean-green-pearl-light: #55c19f;
+$ocean-green-pearl: #48b78e;
+$panton-light: rgb(234, 238, 241);
+$panton: #44d7b6;
+$patens-blue: #ced7dd;
+$pink-hover: #ea7599;
+$smoky: #5a5a5b;
+$solitude: #eaeef6;
+$teal-hover: #80e7d0;
+$trans-black: rgba(0, 0, 0, 0.3);
+$transparent: transparent;
+$tras-gray: rgba(86, 90, 92, 0.3);
+$yellow: #feca26;
+$gray-9: #999;
+$tara: #9bf6db;
+$sky-blue: #3eaaf5;
+// Global Settings
+
+// Screens
+$break-xs: 375px;
+$break-small: 415px;
+$break-medium: 768px;
+$break-large: 1024px;
+$break-xl: 1200px;
+$break-xxl: 1400px;
+$break-xxxl: 2560px;
+$font-Montserrat-Regular: 'Montserrat-Regular';
+$font-Montserrat-Bold: 'Montserrat-Bold';
+$font-Montserrat-Medium: 'Montserrat-Medium';
+$font-Montserrat-SemiBold: 'Montserrat-SemiBold';
+$border: $tb-dash-brd;
+
+$f-8: 8px;
+$f-9: 9px;
+$f-10: 10px;
+$f-11: 11px;
+$f-12: 12px;
+$f-13: 13px;
+$f-14: 14px;
+$f-15: 15px;
+$f-16: 16px;
+$f-18: 18px;
+$f-20: 20px;
+$f-21: 21px;
+$f-22: 22px;
+$f-24: 24px;
+$f-25: 25px;
+$f-26: 26px;
+$f-27: 27px;
+$f-28: 28px;
+$f-30: 30px;
+$f-32: 32px;
+$f-36: 36px;
+$f-40: 40px;
+$f-42: 42px;
+$f-44: 44px;
+$f-47: 47px;
+$f-48: 48px;
+$f-50: 50px;
+$f-56: 56px;
+$f-58: 58px;
+$f-60: 60px;
+$f-75: 75px;
+$f-size-9: $f-9;
+$f-size-10: $f-10;
+$f-size-11: $f-11;
+$f-size-12: $f-12;
+$f-size-13: $f-13;
+$f-size-15: $f-15;
+$f-size-14: $f-14;
+$f-size-16: $f-16;
+$f-size-18: $f-18;
+$f-size-21: $f-21;
+$f-size-22: $f-22;
+$f-size-24: $f-24;
+$f-size-20: $f-20;
+$f-size-28: $f-28;
+$f-size-25: $f-25;
+$f-size-32: $f-32;
+$f-size-36: $f-36;
+$f-size-44: $f-44;
+$f-size-56: $f-56;
+$f-size-58: $f-58;
+$f-size-60: $f-60;
+$f-size-75: $f-75;

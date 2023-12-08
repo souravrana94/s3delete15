@@ -1,0 +1,40 @@
+@import '../../../../../stylesheet/base.scss';
+
+.listRow {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: $grey-7;
+    margin-top: 5px;
+    width: 100%;
+    .category {
+        width: 35%;
+    }
+    .percent {
+        width: 10%;
+        justify-content: center;
+        @include font($f-size-15, $grey-1, $font-Montserrat-Regular);
+        @include for-mobile-567 {
+            display: none;
+        }
+    }
+    .item {
+        width: 55%;
+        align-self: center;
+        text-align: center;
+        text-overflow: ellipsis;
+        .tooltip-container {
+            text-align: center;
+            background-color: rgba($color: #000000, $alpha: 1) !important;
+            padding: 10px 0;
+            border-radius: 10px !important;
+            width: 400px;
+            .items {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+            }
+        }
+    }
+}

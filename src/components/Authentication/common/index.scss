@@ -1,0 +1,28 @@
+@import '../../../stylesheet/base.scss';
+
+.google-login-button {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    button {
+        display: flex;
+        align-items: center;
+        -moz-box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.13) !important;
+        -webkit-box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.13) !important;
+        box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.13) !important;
+        border-radius: 9px !important;
+    }
+}
+.close-button {
+    z-index: 10003;
+    cursor: pointer;
+}
+
+.companyNameText {
+    @include font($f-size-24, $black, $font-Montserrat-SemiBold);
+
+    @include for-tablet-up-mid {
+        @include font($f-size-28, $black, $font-Montserrat-SemiBold);
+    }
+}

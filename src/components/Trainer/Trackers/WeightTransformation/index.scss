@@ -1,0 +1,81 @@
+@import '../../../../stylesheet/base.scss';
+
+$imageContainerWidth: 110px;
+$imageContainerHeight: 130px;
+
+.weightsTransformation {
+    display: flex;
+    flex-direction: column;
+    // align-items: center;
+    align-self: flex-start;
+    @include font($f-size-12, white, $font-Montserrat-Regular);
+    padding-top: 20px;
+    width: 50%;
+    @include for-mobile-768-down {
+        width: 100%;
+    }
+    padding-left: 10px;
+
+    .weightsHeader {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        @include font($f-size-25, white, $font-Montserrat-SemiBold);
+        .weightText {
+            align-self: flex-start;
+            @include for-mobile-481-down {
+                width: 50%;
+            }
+        }
+    }
+    .weightScreenTransformation {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        background-color: $grey-8;
+        border-radius: 10px;
+        padding: 15px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        -moz-box-shadow: 0 0 15px 0px rgba(0, 0, 0, 0.4) !important;
+        -webkit-box-shadow: 0 0 15px 0px rgba(0, 0, 0, 0.4) !important;
+        box-shadow: 0 0 15px 0px rgba(0, 0, 0, 0.4) !important;
+        .imageRowContainer {
+            display: flex;
+            flex-direction: row;
+            padding-top: 10px;
+            align-items: center;
+            .headerContainer {
+                width: $imageContainerWidth;
+                margin-left: 5px;
+                margin-right: 5px;
+                justify-content: center;
+                display: flex;
+            }
+            .noImageContainer {
+                width: $imageContainerWidth;
+                height: $imageContainerHeight;
+                align-items: center;
+                justify-content: center;
+                display: flex;
+                border: 1px solid $grey;
+                border-radius: 4px;
+                margin-left: 5px;
+                margin-right: 5px;
+                color: $grey;
+            }
+            .ImageContainer {
+                border-radius: 4px;
+                margin-left: 5px;
+                margin-right: 5px;
+            }
+        }
+        .seemoreLessButton {
+            display: flex;
+            justify-content: flex-end;
+            padding: 10px;
+            cursor: pointer;
+            text-decoration: underline;
+        }
+    }
+}

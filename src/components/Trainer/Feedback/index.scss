@@ -1,0 +1,56 @@
+@import '../../../stylesheet/base.scss';
+
+.feedback {
+    .p-4 {
+        @include for-mobile-481-down {
+            padding: 0rem !important;
+        }
+    }
+    .client-header {
+        display: flex;
+        align-items: center;
+        // width: 100%;
+        // width: 100% !important;
+        justify-content: space-around;
+        @include for-mobile-600-down {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        > * {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            @include for-mobile-600-down {
+                margin-bottom: 10px;
+            }
+        }
+        .client-name {
+            margin: 0 !important;
+            padding-left: 5px;
+        }
+        .detail-text {
+            margin: 0 !important;
+            padding-left: 5px;
+        }
+        .progress-feedback {
+            display: flex;
+            .feedback {
+                text-align: right;
+                align-self: center;
+                @include font($f-size-12, $grey-4, $font-Montserrat-SemiBold);
+                padding-right: 10px;
+            }
+
+            .circular-progress-bar {
+                height: 40px;
+                width: 40px;
+            }
+        }
+        .add-exercise-btn {
+            display: flex; /* Make the .setExercise elements appear in a row */
+            align-items: center;
+            //margin-left: -30px;
+            // margin-right: 10px; /* Adjust margin as needed */
+        }
+    }
+}

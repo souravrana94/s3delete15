@@ -1,0 +1,97 @@
+@import '../../../../../stylesheet/base.scss';
+
+.client-container {
+    background-color: $main-card-bg;
+    padding: 20px;
+    border-radius: 20px;
+
+    .headings {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-left: 7%;
+        align-items: center;
+
+        h3 {
+            @include font($f-size-18, $white, $font-Montserrat-Medium);
+            font-weight: bold;
+            @include for-mobile-992-max {
+                @include font($f-size-15, $white, $font-Montserrat-Medium);
+            }
+            @include for-mobile-767-down {
+                text-align: center;
+            }
+        }
+        .hide {
+            @include for-mobile-767-down {
+                display: none;
+            }
+        }
+        // .marginL {
+        //     // margin-left: 7%;
+        // }
+
+        .empty {
+            flex: 1;
+            // flex: 0.3;
+            display: flex;
+        }
+        // .steps {
+        //     flex: 1.15;
+        // }
+        .program {
+            flex: 1;
+        }
+        .workout {
+            flex: 1;
+            margin-right: 20px;
+            justify-content: flex-end;
+        }
+        .displayFlex {
+            display: flex;
+            justify-content: center;
+            @include for-mobile-767-down {
+                display: none;
+            }
+        }
+        // .nutrition {
+        //     // flex: 0.85;
+        // }
+    }
+    .program-header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-right: 20px;
+        @include font($f-size-18, $white, $font-Montserrat-Medium);
+        .program-name {
+            padding-right: 5px;
+        }
+        .name-header {
+            display: flex;
+            flex-direction: row;
+        }
+        .addButtons {
+            display: flex;
+            flex-direction: row;
+            padding-bottom: 5px;
+            .add-session-btn {
+                background-color: $green-1;
+                color: $main-card-bg;
+                margin: 0px;
+                padding: 3px;
+            }
+            .addButton {
+                margin-right: 10px;
+                margin-left: 10px;
+            }
+        }
+    }
+
+    &.display-hidden {
+        background-color: transparent;
+        border-radius: unset;
+        padding-bottom: 0;
+        margin-bottom: -20px;
+    }
+}

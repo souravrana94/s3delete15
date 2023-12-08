@@ -1,0 +1,66 @@
+@import '../../../../stylesheet/base.scss';
+
+.cycle-header {
+    display: flex;
+    //justify-content: space-around;
+    align-items: center;
+    @include for-mobile-600-down {
+        flex-direction: column;
+    }
+    > * {
+        margin-left: 10px;
+        margin-right: 10px;
+        @include for-mobile-567 {
+            margin-top: 10px;
+        }
+    }
+    .no-word-wrap {
+        white-space: nowrap;
+        min-width: 125px;
+        background-color: $grey-8;
+        margin: 3px;
+        @include font($f-size-18, $green-1, $font-Montserrat-Medium);
+    }
+    .add-cycle-button-div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        > * {
+            margin-right: 5px;
+        }
+    }
+    .cycle-dropdown {
+        background: transparent;
+        border: 1px solid white;
+        min-width: 250px;
+        color: white;
+        border-radius: 10px;
+        padding: 10px;
+        @include for-mobile-600-down {
+            margin-bottom: 5px;
+        }
+        .cycle-option {
+            background-color: $grey-7;
+            margin: 0;
+            padding: 10px;
+            color: white;
+        }
+        .disabled-option {
+            background-color: $black !important;
+            @include font($f-size-18, white, $font-Montserrat-SemiBold);
+        }
+        @include for-mobile-567 {
+            min-width: none;
+            width: 70%;
+        }
+    }
+
+    .approx-time,
+    .days-per-week {
+        display: flex;
+        > img {
+            padding-right: 10px;
+        }
+    }
+}

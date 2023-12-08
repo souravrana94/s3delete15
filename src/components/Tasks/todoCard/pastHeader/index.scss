@@ -1,0 +1,33 @@
+@import '../../../../stylesheet/base.scss';
+
+.past-header {
+    display: flex;
+    flex-direction: row;
+    .date-container {
+        width: 50%;
+        .time {
+            display: flex;
+            margin-top: 3px;
+            > * {
+                padding-right: 4px;
+            }
+            > span {
+                @include font($f-size-13, $grey-1, $font-Montserrat-Medium);
+                min-width: 60px;
+            }
+        }
+    }
+    .progressbar {
+        display: flex !important;
+        width: 50%;
+        flex-direction: row-reverse !important;
+        .circular-progress-bar {
+            height: 45px;
+            width: 45px;
+        }
+        .progress-percent {
+            padding: 8px;
+            @include font($f-size-18, $white, $font-Montserrat-Medium);
+        }
+    }
+}

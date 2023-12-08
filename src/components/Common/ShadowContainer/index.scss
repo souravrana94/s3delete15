@@ -1,0 +1,45 @@
+@import '../../../stylesheet/base.scss';
+
+.shadow-div {
+    -moz-box-shadow: 0 0 30px 0px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 0 30px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 30px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 9px;
+
+    @include for-mobile-767-down {
+        -moz-box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.1);
+        -webkit-box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.1);
+        border-radius: 9px;
+    }
+}
+
+.shadow-div.shadow-div-vv-small {
+    -moz-box-shadow: 0 0 1px 0px rgba(0, 0, 0, 0.05);
+    -webkit-box-shadow: 0 0 1px 0px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 0 1px 0px rgba(0, 0, 0, 0.05);
+}
+
+.border-large {
+    border-radius: 20px !important;
+    overflow: hidden;
+}
+
+.border-v-small {
+    border-radius: 4px !important;
+}
+
+.shadow-container-title {
+    font-size: 14px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+    color: #5f5f5f;
+    font-weight: 600;
+    margin-bottom: 0;
+
+    @include for-mobile-567 {
+        font-size: 12px;
+    }
+}

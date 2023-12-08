@@ -1,0 +1,27 @@
+@import '../../../../stylesheet/base.scss';
+
+.dynamic-dropdown-container {
+    display: flex;
+    background-color: transparent;
+
+    .label {
+        min-width: 150px;
+        max-width: 150px;
+        color: white;
+        height: max-content;
+        margin: auto;
+
+        @include for-mobile-576 {
+            min-width: 100px;
+            max-width: 100px;
+        }
+    }
+
+    .main-dropdown-container {
+        width: 100%;
+    }
+
+    .creatable-dropdown.is-invalid > div {
+        border-color: #dc3545;
+    }
+}

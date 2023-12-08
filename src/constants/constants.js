@@ -1,0 +1,6 @@
+export const ROLE_TRAINER = 'ROLE_TRAINER'
+export const ROLE_ADMIN = 'ROLE_ADMIN'
+
+export const VISIBILITY_WORLD = 'WORLD'
+export const VISIBILITY_TRAINER = 'TRAINER'
+export const VISIBILITY_CLIENT = 'CLIENT'

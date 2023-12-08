@@ -1,0 +1,54 @@
+@import '../../../stylesheet/base.scss';
+
+.navitem-container {
+    margin-bottom: 30px;
+    .header {
+        display: flex;
+        height: 50px;
+        align-items: center;
+        justify-content: space-around;
+        margin-top: 50px;
+        margin-bottom: 50px;
+
+        @include for-mobile-767-down {
+            margin-bottom: 30px;
+            height: 35px;
+        }
+
+        .navitem {
+            transition: all 0.3s ease;
+            font-weight: 600;
+            cursor: pointer;
+            color: #979797;
+        }
+
+        .navitem.selected {
+            color: rgb(255, 255, 255);
+            border-bottom: 3px solid;
+            font-size: 30px;
+        }
+
+        @include for-mobile-767-down {
+            .navitem {
+                font-size: 13px;
+            }
+            .navitem.selected {
+                font-size: 20px;
+            }
+        }
+
+        @include for-mobile-567 {
+            .navitem {
+                font-size: 10px;
+            }
+            .navitem.selected {
+                font-size: 16px;
+            }
+        }
+    }
+
+    .content-container {
+        min-height: 80vh;
+        padding: 0px !important;
+    }
+}

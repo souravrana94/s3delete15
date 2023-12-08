@@ -1,0 +1,613 @@
+{
+    "sessions": [
+        {
+            "_id": 1,
+            "name": "Day 1",
+            "date": "2023-06-27T18:30:00.000Z",
+            "isCompleted": false,
+            "foodItems": [
+                {
+                    "_id": 1,
+                    "mealType": "Breakfast",
+                    "foodInfoRef": {
+                        "name": "Milk"
+                    },
+                    "unit": "ml",
+                    "quantity": "250",
+                    "calories": "20",
+                    "protein": "10",
+                    "fat": "12",
+                    "carbs": "40",
+                    "comment": "",
+                    "feedback": "",
+                    "isCompleted": true
+                },
+                {
+                    "_id": 2,
+                    "mealType": "Breakfast",
+                    "foodInfoRef": {
+                        "name": "Eggs"
+                    },
+                    "unit": "ml",
+                    "quantity": "250",
+                    "calories": "20",
+                    "protein": "10",
+                    "fat": "12",
+                    "carbs": "40",
+                    "comment": "",
+                    "feedback": "",
+                    "isCompleted": true
+                },
+                {
+                    "_id": 3,
+                    "mealType": "Morning Snacks",
+                    "foodInfoRef": {
+                        "name": "Poha"
+                    },
+                    "unit": "ml",
+                    "quantity": "250",
+                    "calories": "20",
+                    "protein": "10",
+                    "fat": "12",
+                    "carbs": "40",
+                    "comment": "",
+                    "feedback": "",
+                    "isCompleted": false
+                },
+                {
+                    "_id": 4,
+                    "mealType": "Dinner",
+                    "foodInfoRef": { "name": "Roti" },
+
+                    "unit": "ml",
+                    "quantity": "250",
+                    "calories": "20",
+                    "protein": "10",
+                    "fat": "12",
+                    "carbs": "40",
+                    "comment": "",
+                    "feedback": "",
+                    "isCompleted": true
+                },
+                {
+                    "_id": 5,
+                    "mealType": "Evening Snacks",
+                    "unit": "ml",
+                    "foodInfoRef": {
+                        "name": "Tea"
+                    },
+                    "quantity": "250",
+                    "calories": "20",
+                    "protein": "10",
+                    "fat": "12",
+                    "carbs": "40",
+                    "comment": "",
+                    "feedback": "",
+                    "isCompleted": false
+                },
+                {
+                    "_id": 6,
+                    "mealType": "Morning Snacks",
+                    "foodInfoRef": {
+                        "name": "Namkeen"
+                    },
+                    "unit": "ml",
+                    "quantity": "250",
+                    "calories": "20",
+                    "protein": "10",
+                    "fat": "12",
+                    "carbs": "40",
+                    "comment": "",
+                    "feedback": "",
+                    "isCompleted": false
+                },
+                {
+                    "_id": 7,
+                    "mealType": "Lunch",
+                    "foodInfoRef": {
+                        "name": "Rajma"
+                    },
+                    "unit": "ml",
+                    "quantity": "250",
+                    "calories": "20",
+                    "protein": "10",
+                    "fat": "12",
+                    "carbs": "40",
+                    "comment": "",
+                    "feedback": "",
+                    "isCompleted": false
+                },
+                {
+                    "_id": 8,
+                    "mealType": "Lunch",
+                    "foodInfoRef": {
+                        "name": "Curd"
+                    },
+                    "unit": "ml",
+                    "quantity": "250",
+                    "calories": "20",
+                    "protein": "10",
+                    "fat": "12",
+                    "carbs": "40",
+                    "comment": "",
+                    "feedback": "",
+                    "isCompleted": true
+                },
+                {
+                    "_id": 9,
+                    "mealType": "Dinner",
+                    "foodInfoRef": {
+                        "name": "Rice  "
+                    },
+                    "unit": "ml",
+                    "quantity": "250",
+                    "calories": "20",
+                    "protein": "10",
+                    "fat": "12",
+                    "carbs": "40",
+                    "comment": "",
+                    "feedback": "",
+                    "isCompleted": true
+                }
+            ]
+        },
+        {
+            "_id": 2,
+            "name": "Day 2",
+            "date": "2023-06-27T18:30:00.000Z",
+            "isCompleted": false,
+            "foodItems": [
+                {
+                    "_id": 1,
+                    "mealType": "Breakfast",
+                    "foodInfoRef": {
+                        "name": "Milk"
+                    },
+                    "unit": "ml",
+                    "quantity": "250",
+                    "calories": "20",
+                    "protein": "10",
+                    "fat": "12",
+                    "carbs": "40",
+                    "comment": "",
+                    "feedback": "",
+                    "isCompleted": true
+                },
+                {
+                    "_id": 2,
+                    "mealType": "Breakfast",
+                    "foodInfoRef": {
+                        "name": "Milk"
+                    },
+                    "unit": "ml",
+                    "quantity": "250",
+                    "calories": "20",
+                    "protein": "10",
+                    "fat": "12",
+                    "carbs": "40",
+                    "comment": "",
+                    "feedback": "",
+                    "isCompleted": true
+                },
+                {
+                    "_id": 3,
+                    "mealType": "Morning Snacks",
+                    "foodInfoRef": {
+                        "name": "Milk"
+                    },
+                    "unit": "ml",
+                    "quantity": "250",
+                    "calories": "20",
+                    "protein": "10",
+                    "fat": "12",
+                    "carbs": "40",
+                    "comment": "",
+                    "feedback": "",
+                    "isCompleted": false
+                },
+                {
+                    "_id": 4,
+                    "mealType": "Morning Snacks",
+                    "foodInfoRef": {
+                        "name": "Milk"
+                    },
+                    "unit": "ml",
+                    "quantity": "250",
+                    "calories": "20",
+                    "protein": "10",
+                    "fat": "12",
+                    "carbs": "40",
+                    "comment": "",
+                    "feedback": "",
+                    "isCompleted": true
+                },
+                {
+                    "_id": 5,
+                    "mealType": "Evening Snacks",
+                    "foodInfoRef": {
+                        "name": "Milk"
+                    },
+                    "unit": "ml",
+                    "quantity": "250",
+                    "calories": "20",
+                    "protein": "10",
+                    "fat": "12",
+                    "carbs": "40",
+                    "comment": "",
+                    "feedback": "",
+                    "isCompleted": false
+                },
+                {
+                    "_id": 6,
+                    "mealType": "Morning Snacks",
+                    "foodInfoRef": {
+                        "name": "Milk"
+                    },
+                    "unit": "ml",
+                    "quantity": "250",
+                    "calories": "20",
+                    "protein": "10",
+                    "fat": "12",
+                    "carbs": "40",
+                    "comment": "",
+                    "feedback": "",
+                    "isCompleted": false
+                },
+                {
+                    "_id": 7,
+                    "mealType": "Evening Snacks",
+                    "foodInfoRef": {
+                        "name": "Milk"
+                    },
+                    "unit": "ml",
+                    "quantity": "250",
+                    "calories": "20",
+                    "protein": "10",
+                    "fat": "12",
+                    "carbs": "40",
+                    "comment": "",
+                    "feedback": "",
+                    "isCompleted": false
+                },
+                {
+                    "_id": 8,
+                    "mealType": "Lunch",
+                    "foodInfoRef": {
+                        "name": "Milk"
+                    },
+                    "unit": "ml",
+                    "quantity": "250",
+                    "calories": "20",
+                    "protein": "10",
+                    "fat": "12",
+                    "comment": "",
+                    "feedback": "",
+                    "carbs": "40",
+                    "isCompleted": true
+                },
+                {
+                    "_id": 9,
+                    "mealType": "Dinner",
+                    "foodInfoRef": {
+                        "name": "Milk"
+                    },
+                    "unit": "ml",
+                    "quantity": "250",
+                    "calories": "20",
+                    "protein": "10",
+                    "fat": "12",
+                    "carbs": "40",
+                    "comment": "",
+                    "feedback": "",
+                    "isCompleted": true
+                }
+            ]
+        },
+        {
+            "_id": 3,
+            "name": "Day 3",
+            "date": "2023-06-27T18:30:00.000Z",
+            "isCompleted": false,
+            "foodItems": [
+                {
+                    "_id": 1,
+                    "mealType": "Breakfast",
+                    "foodInfoRef": {
+                        "name": "Milk"
+                    },
+                    "unit": "ml",
+                    "quantity": "250",
+                    "calories": "20",
+                    "protein": "10",
+                    "fat": "12",
+                    "carbs": "40",
+                    "comment": "",
+                    "feedback": "",
+                    "isCompleted": true
+                },
+                {
+                    "_id": 2,
+                    "mealType": "Breakfast",
+                    "foodInfoRef": {
+                        "name": "Milk"
+                    },
+                    "unit": "ml",
+                    "quantity": "250",
+                    "calories": "20",
+                    "protein": "10",
+                    "fat": "12",
+                    "carbs": "40",
+                    "comment": "",
+                    "feedback": "",
+                    "isCompleted": true
+                },
+                {
+                    "_id": 3,
+                    "mealType": "Morning Snacks",
+                    "foodInfoRef": {
+                        "name": "Milk"
+                    },
+                    "unit": "ml",
+                    "quantity": "250",
+                    "calories": "20",
+                    "protein": "10",
+                    "fat": "12",
+                    "carbs": "40",
+                    "comment": "",
+                    "feedback": "",
+                    "isCompleted": false
+                },
+                {
+                    "_id": 4,
+                    "mealType": "Dinner",
+                    "foodInfoRef": {
+                        "name": "Milk"
+                    },
+                    "unit": "ml",
+                    "quantity": "250",
+                    "calories": "20",
+                    "protein": "10",
+                    "fat": "12",
+                    "carbs": "40",
+                    "comment": "",
+                    "feedback": "",
+                    "isCompleted": true
+                },
+                {
+                    "_id": 5,
+                    "mealType": "Evening Snacks",
+                    "foodInfoRef": {
+                        "name": "Milk"
+                    },
+                    "unit": "ml",
+                    "quantity": "250",
+                    "calories": "20",
+                    "protein": "10",
+                    "fat": "12",
+                    "carbs": "40",
+                    "comment": "",
+                    "feedback": "",
+                    "isCompleted": false
+                },
+                {
+                    "_id": 6,
+                    "mealType": "Morning Snacks",
+                    "foodInfoRef": {
+                        "name": "Milk"
+                    },
+                    "unit": "ml",
+                    "quantity": "250",
+                    "calories": "20",
+                    "protein": "10",
+                    "fat": "12",
+                    "carbs": "40",
+                    "comment": "",
+                    "feedback": "",
+                    "isCompleted": false
+                },
+                {
+                    "_id": 7,
+                    "mealType": "Lunch",
+                    "foodInfoRef": {
+                        "name": "Milk"
+                    },
+                    "unit": "ml",
+                    "quantity": "250",
+                    "calories": "20",
+                    "protein": "10",
+                    "fat": "12",
+                    "carbs": "40",
+                    "comment": "",
+                    "feedback": "",
+                    "isCompleted": false
+                },
+                {
+                    "_id": 8,
+                    "mealType": "Lunch",
+                    "foodInfoRef": {
+                        "name": "Milk"
+                    },
+                    "unit": "ml",
+                    "quantity": "250",
+                    "calories": "20",
+                    "protein": "10",
+                    "fat": "12",
+                    "carbs": "40",
+                    "comment": "",
+                    "feedback": "",
+                    "isCompleted": true
+                },
+                {
+                    "_id": 9,
+                    "mealType": "Dinner",
+                    "foodInfoRef": {
+                        "name": "Milk"
+                    },
+                    "unit": "ml",
+                    "quantity": "250",
+                    "calories": "20",
+                    "protein": "10",
+                    "fat": "12",
+                    "carbs": "40",
+                    "comment": "",
+                    "feedback": "",
+                    "isCompleted": true
+                }
+            ]
+        }
+    ],
+    "cycleData": {
+        "clientSpecificCycle": [
+            {
+                "_id": "643680e35b25fd525fdbc0ff",
+                "name": "Day 1",
+                "totalRoutines": 1,
+                "routineRefs": [
+                    {
+                        "_id": "643681b15b25fd525fdbc2c5",
+                        "dayNumber": 1,
+                        "name": "test42",
+                        "foodItems": [
+                            {
+                                "_id": 1,
+                                "mealType": "Breakfast",
+                                "foodInfoRef": {
+                                    "name": "Milk2"
+                                },
+                                "unit": "ml",
+                                "quantity": "250",
+                                "calories": "20",
+                                "protein": "10",
+                                "fat": "12",
+                                "carbs": "40",
+                                "comment": "",
+                                "feedback": "",
+                                "isCompleted": true
+                            },
+                            {
+                                "_id": 2,
+                                "mealType": "Breakfast",
+                                "name": "Eggs",
+                                "unit": "ml",
+                                "quantity": "250",
+                                "calories": "20",
+                                "protein": "10",
+                                "fat": "12",
+                                "carbs": "40",
+                                "comment": "",
+                                "feedback": "",
+                                "isCompleted": true
+                            },
+                            {
+                                "_id": 3,
+                                "mealType": "Morning Snacks",
+                                "name": "Poha",
+                                "unit": "ml",
+                                "quantity": "250",
+                                "calories": "20",
+                                "protein": "10",
+                                "fat": "12",
+                                "carbs": "40",
+                                "comment": "",
+                                "feedback": "",
+                                "isCompleted": false
+                            },
+                            {
+                                "_id": 4,
+                                "mealType": "Dinner",
+                                "name": "Roti",
+                                "unit": "ml",
+                                "quantity": "250",
+                                "calories": "20",
+                                "protein": "10",
+                                "fat": "12",
+                                "carbs": "40",
+                                "comment": "",
+                                "feedback": "",
+                                "isCompleted": true
+                            },
+                            {
+                                "_id": 5,
+                                "mealType": "Evening Snacks",
+                                "name": "Tea",
+                                "unit": "ml",
+                                "quantity": "250",
+                                "calories": "20",
+                                "protein": "10",
+                                "fat": "12",
+                                "carbs": "40",
+                                "comment": "",
+                                "feedback": "",
+                                "isCompleted": false
+                            },
+                            {
+                                "_id": 6,
+                                "mealType": "Morning Snacks",
+                                "name": "Namkeen",
+                                "unit": "ml",
+                                "quantity": "250",
+                                "calories": "20",
+                                "protein": "10",
+                                "fat": "12",
+                                "carbs": "40",
+                                "comment": "",
+                                "feedback": "",
+                                "isCompleted": false
+                            },
+                            {
+                                "_id": 7,
+                                "mealType": "Lunch",
+                                "name": "Rajma",
+                                "unit": "ml",
+                                "quantity": "250",
+                                "calories": "20",
+                                "protein": "10",
+                                "fat": "12",
+                                "carbs": "40",
+                                "comment": "",
+                                "feedback": "",
+                                "isCompleted": false
+                            },
+                            {
+                                "_id": 8,
+                                "mealType": "Lunch",
+                                "name": "Curd",
+                                "unit": "ml",
+                                "quantity": "250",
+                                "calories": "20",
+                                "protein": "10",
+                                "fat": "12",
+                                "carbs": "40",
+                                "comment": "",
+                                "feedback": "",
+                                "isCompleted": true
+                            },
+                            {
+                                "_id": 9,
+                                "mealType": "Dinner",
+                                "name": "Rice  ",
+                                "unit": "ml",
+                                "quantity": "250",
+                                "calories": "20",
+                                "protein": "10",
+                                "fat": "12",
+                                "carbs": "40",
+                                "comment": "",
+                                "feedback": "",
+                                "isCompleted": true
+                            }
+                        ],
+                        "cycleRef": "643680e35b25fd525fdbc0ff",
+                        "__v": 18
+                    }
+                ],
+                "isActive": true,
+                "__v": 1,
+                "userRef": "64367ccd5b25fd525fdbbf79"
+            }
+        ],
+        "allClientsCycle": [],
+        "globalCycles": [],
+        "cycleRef": "643680e35b25fd525fdbc0ff"
+    }
+}

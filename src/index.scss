@@ -1,0 +1,44 @@
+@font-face {
+    font-family: 'Abel';
+    src: url('./assets/fonts/Abel/Abel-Regular.ttf');
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'MontSerrat-Regular';
+    src: url('./assets/fonts/Montsserat/Montserrat-Regular.ttf');
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'MontSerrat-Bold';
+    src: url('./assets/fonts/Montsserat/Montserrat-Bold.ttf');
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'MontSerrat-SemiBold';
+    src: url('./assets/fonts/Montsserat/Montserrat-SemiBold.ttf');
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'MontSerrat-Medium';
+    src: url('./assets/fonts/Montsserat/Montserrat-Medium.ttf');
+    font-style: normal;
+    font-display: swap;
+}
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: 'MontSerrat-Regular', -apple-system, BlinkMacSystemFont,
+        'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
+        'Droid Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.main {
+    height: 100%;
+}

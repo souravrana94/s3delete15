@@ -1,0 +1,146 @@
+@import '../../../../../../stylesheet/base.scss';
+
+.table-exercise-mobile {
+    padding: 4px;
+    margin-top: 10px;
+    @include font($f-size-12, white, $font-Montserrat-Medium);
+    display: none;
+    @include for-mobile-481-down {
+        display: flex;
+        align-items: center;
+    }
+    .exercise-video {
+        height: 30px;
+        min-width: 30px;
+        max-width: 30px;
+        object-fit: contain;
+        margin-left: 4px;
+        background-color: white;
+        margin-right: 4px;
+        border-radius: 5px;
+    }
+}
+.table-row-container.table-row-body {
+    border-radius: 5px;
+    background-color: $grey-7;
+    margin-top: 5px;
+    @include for-mobile-481-down {
+        margin-top: 0px;
+    }
+    @include font($f-size-12, white, $font-Montserrat-Medium);
+    .table-exercise {
+        display: flex;
+        align-items: center;
+        @include for-mobile-481-down {
+            display: none;
+        }
+        .exercise-video {
+            height: 30px;
+            min-width: 30px;
+            max-width: 30px;
+            object-fit: contain;
+            margin-left: 4px;
+            background-color: white;
+            margin-right: 4px;
+            border-radius: 5px;
+        }
+    }
+    .table-sets {
+        cursor: pointer;
+    }
+
+    .close-rest-img {
+        cursor: pointer;
+    }
+
+    &.editable {
+        cursor: pointer;
+    }
+    .table-action {
+        margin-bottom: 5.5px;
+    }
+}
+.exercise-video-tooltip-container {
+    // background-color: rgba($color: #000000, $alpha: 1) !important;
+    opacity: 1 !important;
+    background: none !important;
+    .exercise-video-tooltip {
+        height: 160px;
+        min-width: 160px;
+        max-width: 160px;
+        object-fit: contain;
+        margin-left: 4px;
+        background-color: white;
+        margin-right: 4px;
+        border-radius: 5px;
+    }
+}
+.exercise-video-gif {
+    @include for-mobile-481-down {
+        display: none;
+    }
+}
+.tooltip-container {
+    text-align: center;
+    background-color: rgba($color: #000000, $alpha: 1) !important;
+    padding: 10px 0;
+    border-radius: 10px !important;
+    .heading {
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        > * {
+            flex: 1;
+            @include font($f-size-13, white, $font-Montserrat-Medium);
+            @include for-mobile-1199-down {
+                width: 15vw;
+                @include font($f-size-10, white, $font-Montserrat-Medium);
+            }
+        }
+
+        .set {
+            flex: 0.5;
+        }
+    }
+
+    .body {
+        .set-row {
+            display: flex;
+            > * {
+                flex: 1;
+                text-align: center;
+            }
+            .set {
+                flex: 0.5;
+            }
+            .rep,
+            .weight {
+                display: flex;
+                flex-direction: row;
+                white-space: nowrap;
+                width: 120px;
+                .left {
+                    flex: 1;
+                    color: $grey-3;
+                    margin-left: auto;
+                    border-right: 0.5px solid white;
+                }
+
+                .right {
+                    flex: 1;
+                    margin-right: auto;
+                    border-left: 0.5px solid white;
+                }
+            }
+
+            @include for-mobile-1199-down {
+                font-size: $f-10;
+                .rep,
+                .weight {
+                    width: 50px;
+                }
+            }
+        }
+    }
+}

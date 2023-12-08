@@ -1,0 +1,78 @@
+@import '../../../../../stylesheet/base.scss';
+
+.table-container {
+    .table-row-container {
+        min-height: 35px;
+        padding: 5px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        @include font($f-size-12, $grey-4, $font-Montserrat-Regular);
+        @include for-mobile-481-down {
+            justify-content: left;
+        }
+        .table-meal {
+            flex: 1;
+            @include for-mobile-481-down {
+                display: none;
+            }
+        }
+        .table-column {
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .width-column1 {
+            width: 60px;
+            padding: 5px;
+        }
+        .width-column2 {
+            width: 60px;
+            padding: 5px;
+        }
+
+        .width-column3 {
+            width: 25px;
+            align-self: center;
+        }
+        .table-column,
+        .table-sets {
+            @include for-mobile-481-down {
+                width: 45px !important;
+            }
+        }
+    }
+
+    .table-body-container {
+        width: 100%;
+        .add-exercise-btn {
+            background-color: $grey-7;
+            margin-top: 10px;
+            @include font($f-size-12, $green-1, $font-Montserrat-Regular);
+            padding: 4px;
+        }
+        .accordionBorder {
+            border: 1px solid $grey-5;
+            margin: 10px 0;
+            padding: 5px;
+            border-radius: 5px;
+            .meal-button {
+                @include font($f-size-12, $green-1, $font-Montserrat-SemiBold);
+                // background-color: transparent;
+                background-color: #36f5c70b;
+                border: none;
+                margin: 2px;
+            }
+            .meal-type {
+                flex: 1;
+                @include font($f-size-12, $grey-1, $font-Montserrat-Medium);
+                margin-bottom: -5px;
+            }
+            .meal-type-header {
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+    }
+}

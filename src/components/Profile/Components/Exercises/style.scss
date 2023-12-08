@@ -1,0 +1,134 @@
+@import '../../../../stylesheet/base.scss';
+.heading1 {
+    border-bottom: 3px solid;
+    width: max-content;
+    font-size: 30px;
+    font-weight: 600;
+    // margin-bottom: 30px;
+    // margin-left: 10px;
+}
+.searchIcon {
+    width: 25px;
+    height: 25px;
+    padding: 2px;
+}
+.displaymsgError {
+    padding-top: 10px;
+    @include font($f-size-14, $red, $font-Montserrat-Regular);
+}
+.displaymsgSuccess {
+    padding-top: 10px;
+    @include font($f-size-14, $green-1, $font-Montserrat-Regular);
+}
+.exercise-video {
+    min-height: 40px;
+    max-height: 40px;
+    min-width: 40px;
+    max-width: 40px;
+    object-fit: contain;
+    margin-left: 4px;
+    background-color: white;
+    margin-right: 4px;
+    border-radius: 5px;
+    @include for-mobile-481-down {
+        display: none;
+    }
+}
+.exercise-video-gif {
+    align-self: center;
+    @include for-mobile-481-down {
+        display: none;
+    }
+}
+.column-gif {
+    padding: 5px;
+    @include for-mobile-481-down {
+        display: none;
+    }
+}
+.column-exerciseName {
+    max-width: 300px;
+    padding: 5px;
+}
+.column-layout {
+    min-width: 120px;
+    padding: 5px;
+    text-align: center;
+}
+.column-youtubeurl {
+    padding: 5px;
+    text-align: center;
+}
+.link {
+    // color: #3366cc;
+    color: white;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.link:hover {
+    // color: #1344a8;
+    color: #3366cc;
+}
+.editIcon {
+    margin: 5px;
+}
+.crossIcon {
+    color: red;
+    margin: 5px;
+}
+.iconSize {
+    width: 20px;
+    height: 20px;
+}
+.editInput {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    outline: 1px solid white;
+    border-radius: 5px;
+    max-width: 250px;
+}
+.pagination {
+    // display: inline-block;
+    display: flex;
+    justify-content: center;
+    padding: 20px 10px;
+}
+
+.inactivePage {
+    color: white;
+    // float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+.activePage {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+.pagination a.active {
+    background-color: white;
+    color: black;
+}
+.exercise-video-tooltip-container {
+    // background-color: rgba($color: #000000, $alpha: 1) !important;
+    opacity: 1 !important;
+    background: none !important;
+    .exercise-video-tooltip {
+        height: 160px;
+        min-width: 160px;
+        max-width: 160px;
+        object-fit: contain;
+        margin-left: 4px;
+        background-color: white;
+        margin-right: 4px;
+        border-radius: 5px;
+    }
+}
+.addButton {
+    width: fit-content;
+    margin: 0;
+}
