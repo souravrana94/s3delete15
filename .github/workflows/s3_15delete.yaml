@@ -28,7 +28,7 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: us-east-1
       - name: Deploy static site to s3 Bucket
-        run: aws s3 sync ./build s3://testcicdgit
+        run: aws s3 sync ./build s3://s3-delete15
 
       - name: Remove from S3
         uses: vitorsgomes/s3-rm-action@master
