@@ -1,0 +1,44 @@
+name: s3test
+on: [workflow_dispatch]
+jobs: 
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+ 
+      - name: Setup node
+        uses: actions/setup-node@v3
+ 
+      - name: Install dependencies
+        run: npm install --legacy-peer-deps && npm update
+ 
+      - name: Build static file
+        run: CI=false npm run build
+ 
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: build-artifact
+          path: ./build
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v3
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: us-east-1
+      - name: Deploy static site to s3 Bucket
+        run: aws s3 sync ./build s3://testcicdgit
+
+      - name: Remove from S3
+        uses: vitorsgomes/s3-rm-action@master
+        with:
+         args: --recursive
+        env:
+         AWS_S3_BUCKET: ${{ secrets.AWS_BUCKET_NAME }}
+         AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+         AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+         AWS_REGION: ${{ secrets.AWS_REGION }}
+         PATH_TO_DELETE: ${{ github.event.ref }}
+
+      

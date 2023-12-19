@@ -4,7 +4,7 @@ name: s3test
  
 # Controls when the action will run. Workflow runs when manually triggered using the UI
 # or API.
-on: push
+on: workflow_dispatch
  
  
 jobs:
