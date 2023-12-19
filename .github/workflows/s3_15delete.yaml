@@ -30,7 +30,7 @@ jobs:
       - name: Deploy static site to s3 Bucket
         run: aws s3 sync ./build s3://testcicdgit
 
-      - name: Remove from S3_Bucket
+      - name: Remove from S3
         uses: vitorsgomes/s3-rm-action@master
         with:
          args: --recursive
