@@ -1,5 +1,5 @@
 name: s3test
-on: [workflow_dispatch]
+on: [push]
 jobs: 
   build:
     runs-on: ubuntu-latest
@@ -10,7 +10,7 @@ jobs:
       - name: Setup node
         uses: actions/setup-node@v3
  
-      - name: Install dependencies
+      - name: Install dependenciees
         run: npm install --legacy-peer-deps && npm update
  
       - name: Build static file
